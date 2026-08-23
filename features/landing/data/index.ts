@@ -4,167 +4,71 @@ export const myServicesData = [
         id: '1',
         galleries: [
             {
+                id: 'product-1',
                 videoUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+                    'https://res.cloudinary.com/diljekoto/video/upload/v1787507953/Visser_-_Muaq_Beauty_-_First_Final-compressed_p9yded.mp4',
                 imageUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+                    'https://res.cloudinary.com/diljekoto/image/upload/v1787513694/Screenshot_2026-08-04_213852_g6ihnc.png',
                 alt: 'product-gallery-1',
-                client: 'Go1 Enterprise AI',
-                serviceType: 'Product Video'
+                client: 'Muaq Beauty',
+                serviceType: '3D Product Animation'
             },
             {
+                id: 'product-2',
                 videoUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+                    'https://res.cloudinary.com/diljekoto/video/upload/v1787507919/Nescafe_Gold_Product_Animation_jz1551.mp4',
                 imageUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                alt: 'product-gallery-2',
-                client: 'Noritz PRO',
-                serviceType: 'Product Video'
-            },
-            {
-                videoUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                imageUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                alt: 'product-gallery-3',
-                client: 'Noritz Racks',
-                serviceType: 'Product Video'
-            },
-            {
-                videoUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                imageUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+                    'https://res.cloudinary.com/diljekoto/image/upload/v1787513581/Screenshot_2026-08-24_022927_rsmmwi.png',
                 alt: 'product-gallery-4',
-                client: 'Samscreen MAX Kleen',
-                serviceType: 'Product Video'
+                client: 'Nescafe',
+                serviceType: '3D Product Animation'
+            },
+            {
+                id: 'product-3',
+                videoUrl:
+                    'https://res.cloudinary.com/diljekoto/video/upload/v1787507933/Visser_-_Luxy_Skincare_Revisi_2_dmvgfx.mp4',
+                imageUrl:
+                    'https://res.cloudinary.com/diljekoto/image/upload/v1787513581/Screenshot_2026-08-02_222959_dqcmqv.png',
+                alt: 'product-gallery-3',
+                client: 'Luxy Skincare',
+                serviceType: '3D Product Animation'
+            },
+            {
+                id: 'product-4',
+                videoUrl:
+                    'https://res.cloudinary.com/diljekoto/video/upload/v1787507955/Visser_-_Muaq_Beauty_-_Third_Revisi_2-compressed_jsqdx8.mp4',
+                imageUrl:
+                    'https://res.cloudinary.com/diljekoto/image/upload/v1787513581/Screenshot_2026-08-02_223208_kjfthw.png',
+                alt: 'product-gallery-2',
+                client: 'Muaq Beauty',
+                serviceType: '3D Product Animation'
             }
         ]
     },
-    // {
-    //     label: 'Explainer',
-    //     id: '2',
-    //     galleries: [
-    //         {
-    //             videoUrl:
-    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-    //             imageUrl:
-    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-    //             alt: 'explainer-gallery-1',
-    //             client: 'Fintech Solutions',
-    //             serviceType: 'Explainer Video'
-    //         },
-    //         {
-    //             videoUrl:
-    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-    //             imageUrl:
-    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-    //             alt: 'explainer-gallery-2',
-    //             client: 'HealthCare App',
-    //             serviceType: 'Explainer Video'
-    //         },
-    //         {
-    //             videoUrl:
-    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-    //             imageUrl:
-    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-    //             alt: 'explainer-gallery-3',
-    //             client: 'EcoEnergy',
-    //             serviceType: 'Explainer Video'
-    //         },
-    //         {
-    //             videoUrl:
-    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-    //             imageUrl:
-    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-    //             alt: 'explainer-gallery-4',
-    //             client: 'LogiTech',
-    //             serviceType: 'Explainer Video'
-    //         }
-    //     ]
-    // },
     {
         label: 'Saas/App',
         id: '3',
         galleries: [
             {
+                id: 'saas-1',
                 videoUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+                    'https://res.cloudinary.com/diljekoto/video/upload/v1787507981/C4dStyles_NotionCards_Beauty2-compressed_b3tdkn.mp4',
                 imageUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+                    'https://res.cloudinary.com/diljekoto/image/upload/v1787513580/Screenshot_2026-08-03_134903_k7rueh.png',
                 alt: 'saas-gallery-1',
-                client: 'TaskMaster SaaS',
+                client: 'Notion',
                 serviceType: 'App Demo'
             },
             {
+                id: 'saas-2',
                 videoUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+                    'https://res.cloudinary.com/diljekoto/video/upload/v1787507941/C4dStyles_NotionCards_Beauty1_gz8vri.mp4',
                 imageUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+                    'https://res.cloudinary.com/diljekoto/image/upload/v1787513580/Screenshot_2026-08-03_134822_xe2rcn.png',
                 alt: 'saas-gallery-2',
-                client: 'CloudDrive Pro',
+                client: 'Notion',
                 serviceType: 'App Demo'
-            },
-            {
-                videoUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                imageUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                alt: 'saas-gallery-3',
-                client: 'Analytics Hub',
-                serviceType: 'SaaS Promo'
-            },
-            {
-                videoUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                imageUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                alt: 'saas-gallery-4',
-                client: 'SecureAuth',
-                serviceType: 'SaaS Promo'
             }
         ]
     }
-    // {
-    //     label: 'Event/Booth',
-    //     id: '4',
-    //     galleries: [
-    //         {
-    //             videoUrl:
-    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-    //             imageUrl:
-    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-    //             alt: 'event-gallery-1',
-    //             client: 'TechExpo 2026',
-    //             serviceType: 'Event Film'
-    //         },
-    //         {
-    //             videoUrl:
-    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-    //             imageUrl:
-    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-    //             alt: 'event-gallery-2',
-    //             client: 'AutoShow Booth',
-    //             serviceType: 'Booth Display'
-    //         },
-    //         {
-    //             videoUrl:
-    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-    //             imageUrl:
-    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-    //             alt: 'event-gallery-3',
-    //             client: 'Global Summit',
-    //             serviceType: 'Event Film'
-    //         },
-    //         {
-    //             videoUrl:
-    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-    //             imageUrl:
-    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-    //             alt: 'event-gallery-4',
-    //             client: 'InnovateX Expo',
-    //             serviceType: 'Booth Display'
-    //         }
-    //     ]
-    // }
 ];

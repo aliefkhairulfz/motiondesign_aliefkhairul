@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { FaBehanceSquare, FaInstagram } from 'react-icons/fa';
 import { TbTrademark } from 'react-icons/tb';
 import TabService from '../components/tab-service';
+import StoryboardFlow from '../components/storyboard-flow';
 import { myServicesData } from '../data';
 
 function LandingPage() {
@@ -17,13 +18,13 @@ function LandingPage() {
                     muted
                     playsInline
                     className="absolute inset-0 w-full h-full object-cover -z-10"
-                    src="https://res.cloudinary.com/diljekoto/video/upload/v1787497857/C4dStyles_NotionCards_Beauty2_l2qjzt.mp4"
+                    src="https://res.cloudinary.com/diljekoto/video/upload/v1787507933/Visser_-_Luxy_Skincare_Revisi_2_dmvgfx.mp4"
                 />
                 {/* VIDEO OVERLAY (Radial gradient vignette using neutral-900, darker) */}
                 <div className="absolute inset-0 bg-neutral-900/50 pointer-events-none -z-10"></div>
 
                 {/* CTA */}
-                <div className="max-w-3xl mx-auto px-4 flex flex-col items-center justify-center gap-4 relative z-10 -mt-20">
+                <div className="max-w-4xl mx-auto px-4 flex flex-col items-center justify-center gap-4 relative z-10 -mt-16">
                     <h1 className="text-5xl sm:text-7xl font-bold text-center text-neutral-100">
                         Make your product easy to understand and hard to ignore.
                     </h1>
@@ -35,7 +36,7 @@ function LandingPage() {
                     </p>
 
                     <div className="flex items-center gap-4 mt-2">
-                        <Button className="p-6 font-bold bg-neutral-100 text-neutral-900 hover:bg-neutral-200">
+                        <Button className="p-6 font-bold bg-neutral-200 text-neutral-900 hover:bg-neutral-200">
                             Get a Video
                         </Button>
                         <Button
@@ -51,7 +52,7 @@ function LandingPage() {
             {/* HERO SECTION & VIDEO BG */}
 
             {/* MAIN SECTION */}
-            <section className="relative z-10 p-10 text-neutral-950 w-full min-h-screen rounded-t-[60px] bg-neutral-100 -mt-50">
+            <section className="relative z-10 p-10 text-neutral-950 w-full min-h-screen rounded-t-[60px] bg-neutral-200 -mt-50 shadow-2xl shadow-neutral-900">
                 {/* RATE */}
                 <ul className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-neutral-300 ring-1 ring-neutral-300 rounded-[20px]">
                     <li className="flex flex-col items-center justify-center py-4 md:py-8">
@@ -170,10 +171,14 @@ function LandingPage() {
                                         Storyboard
                                     </span>
                                 </div>
-                                <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+                                <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
                                     You{' '}
-                                    <span className="text-orange-600">
-                                        see the video
+                                    <span className="bg-linear-to-r from-orange-500 via-orange-600 to-red-600 bg-clip-text text-transparent">
+                                        see the
+                                    </span>
+                                    <br />
+                                    <span className="bg-linear-to-r from-orange-500 via-orange-600 to-red-600 bg-clip-text text-transparent">
+                                        video
                                     </span>{' '}
                                     before production starts.
                                 </h3>
@@ -184,9 +189,7 @@ function LandingPage() {
                                     before we make it.
                                 </p>
                             </div>
-                            <div className="w-full aspect-4/3 bg-neutral-200 rounded-2xl flex items-center justify-center text-neutral-500 font-medium">
-                                Storyboard Frame Overview
-                            </div>
+                            <StoryboardFlow />
                         </div>
 
                         {/* STEP 3: PRODUCTION */}
@@ -225,7 +228,7 @@ function LandingPage() {
             {/* MAIN SECTION */}
 
             {/* FOOTER SECTION */}
-            <footer className="relative z-10 w-full py-24 flex flex-col items-center bg-neutral-100">
+            <footer className="relative z-10 w-full py-24 flex flex-col items-center bg-neutral-200">
                 {/* Logo & Rating */}
                 <div className="flex items-start gap-2 mb-20 text-red-500">
                     <h1 className="text-7xl md:text-9xl font-bold tracking-tighter leading-none bg-linear-to-br from-orange-500 to-red-600 bg-clip-text text-transparent pb-2">

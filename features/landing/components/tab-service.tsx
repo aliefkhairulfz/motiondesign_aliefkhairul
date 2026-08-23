@@ -62,7 +62,7 @@ function TabService(props: TabService) {
                                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                                     fill
                                 />
-                                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent flex items-end justify-between p-6 text-white pointer-events-none">
+                                <div className="absolute inset-0 bg-linear-to-t from-neutral-900/80 via-neutral-900/20 to-transparent flex items-end justify-between p-6 text-neutral-100 pointer-events-none">
                                     <p className="text-lg font-bold">
                                         {gallery.client}
                                     </p>

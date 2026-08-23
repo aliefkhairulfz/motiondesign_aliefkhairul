@@ -41,48 +41,48 @@ export const myServicesData = [
             }
         ]
     },
-    {
-        label: 'Explainer',
-        id: '2',
-        galleries: [
-            {
-                videoUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                imageUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                alt: 'explainer-gallery-1',
-                client: 'Fintech Solutions',
-                serviceType: 'Explainer Video'
-            },
-            {
-                videoUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                imageUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                alt: 'explainer-gallery-2',
-                client: 'HealthCare App',
-                serviceType: 'Explainer Video'
-            },
-            {
-                videoUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                imageUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                alt: 'explainer-gallery-3',
-                client: 'EcoEnergy',
-                serviceType: 'Explainer Video'
-            },
-            {
-                videoUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                imageUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                alt: 'explainer-gallery-4',
-                client: 'LogiTech',
-                serviceType: 'Explainer Video'
-            }
-        ]
-    },
+    // {
+    //     label: 'Explainer',
+    //     id: '2',
+    //     galleries: [
+    //         {
+    //             videoUrl:
+    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+    //             imageUrl:
+    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+    //             alt: 'explainer-gallery-1',
+    //             client: 'Fintech Solutions',
+    //             serviceType: 'Explainer Video'
+    //         },
+    //         {
+    //             videoUrl:
+    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+    //             imageUrl:
+    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+    //             alt: 'explainer-gallery-2',
+    //             client: 'HealthCare App',
+    //             serviceType: 'Explainer Video'
+    //         },
+    //         {
+    //             videoUrl:
+    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+    //             imageUrl:
+    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+    //             alt: 'explainer-gallery-3',
+    //             client: 'EcoEnergy',
+    //             serviceType: 'Explainer Video'
+    //         },
+    //         {
+    //             videoUrl:
+    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+    //             imageUrl:
+    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+    //             alt: 'explainer-gallery-4',
+    //             client: 'LogiTech',
+    //             serviceType: 'Explainer Video'
+    //         }
+    //     ]
+    // },
     {
         label: 'Saas/App',
         id: '3',
@@ -124,47 +124,47 @@ export const myServicesData = [
                 serviceType: 'SaaS Promo'
             }
         ]
-    },
-    {
-        label: 'Event/Booth',
-        id: '4',
-        galleries: [
-            {
-                videoUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                imageUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                alt: 'event-gallery-1',
-                client: 'TechExpo 2026',
-                serviceType: 'Event Film'
-            },
-            {
-                videoUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                imageUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                alt: 'event-gallery-2',
-                client: 'AutoShow Booth',
-                serviceType: 'Booth Display'
-            },
-            {
-                videoUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                imageUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                alt: 'event-gallery-3',
-                client: 'Global Summit',
-                serviceType: 'Event Film'
-            },
-            {
-                videoUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                imageUrl:
-                    'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
-                alt: 'event-gallery-4',
-                client: 'InnovateX Expo',
-                serviceType: 'Booth Display'
-            }
-        ]
     }
+    // {
+    //     label: 'Event/Booth',
+    //     id: '4',
+    //     galleries: [
+    //         {
+    //             videoUrl:
+    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+    //             imageUrl:
+    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+    //             alt: 'event-gallery-1',
+    //             client: 'TechExpo 2026',
+    //             serviceType: 'Event Film'
+    //         },
+    //         {
+    //             videoUrl:
+    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+    //             imageUrl:
+    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+    //             alt: 'event-gallery-2',
+    //             client: 'AutoShow Booth',
+    //             serviceType: 'Booth Display'
+    //         },
+    //         {
+    //             videoUrl:
+    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+    //             imageUrl:
+    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+    //             alt: 'event-gallery-3',
+    //             client: 'Global Summit',
+    //             serviceType: 'Event Film'
+    //         },
+    //         {
+    //             videoUrl:
+    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+    //             imageUrl:
+    //                 'https://res.cloudinary.com/diljekoto/image/upload/v1780584913/cld-sample-3.jpg',
+    //             alt: 'event-gallery-4',
+    //             client: 'InnovateX Expo',
+    //             serviceType: 'Booth Display'
+    //         }
+    //     ]
+    // }
 ];

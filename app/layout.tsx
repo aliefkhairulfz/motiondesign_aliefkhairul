@@ -2,6 +2,7 @@ import { cn } from '@/lib/utils';
 import type { Metadata } from 'next';
 import { Inter, Manrope } from 'next/font/google';
 import './globals.css';
+import { Header } from '@/components/shared/header';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
             )}
         >
             <body className={`${manrope.className} min-h-full flex flex-col`}>
+                <Header />
                 {children}
             </body>
         </html>

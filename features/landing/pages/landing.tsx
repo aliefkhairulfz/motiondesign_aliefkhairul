@@ -381,12 +381,12 @@ function LandingPage() {
                 {/* OUR PROCESS SECTION */}
 
                 {/* FOOTER SECTION */}
-                <footer className="w-full py-24 flex flex-col items-center">
+                <footer className="w-full py-24 flex flex-col items-center bg-gradient-to-b from-transparent to-white">
                     {/* Logo & Rating */}
                     <div className="flex flex-col items-center gap-2 mb-20">
-                        <h1 className="text-7xl md:text-8xl font-bold tracking-tight text-black">
+                        <h1 className="text-7xl md:text-9xl font-bold tracking-tighter leading-none bg-gradient-to-br from-orange-500 to-red-600 bg-clip-text text-transparent pb-2">
                             RedMotion
-                            <sup className="text-3xl md:text-4xl font-medium">
+                            <sup className="text-3xl md:text-5xl font-medium bg-gradient-to-br from-orange-500 to-red-600 bg-clip-text text-transparent">
                                 ™
                             </sup>
                         </h1>
@@ -404,81 +404,81 @@ function LandingPage() {
                     {/* Columns */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-4xl w-full mb-24 px-8">
                         {/* Contact */}
-                        <div className="flex flex-col gap-4">
-                            <h3 className="font-bold text-xl text-black mb-2">
+                        <div className="flex flex-col gap-3">
+                            <h3 className="font-bold text-xl text-black mb-1">
                                 Contact
                             </h3>
                             <a
                                 href="mailto:filip@redmotion.works"
-                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                             >
                                 filip@redmotion.works
                             </a>
                             <a
                                 href="tel:+48508844801"
-                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                             >
                                 +48 508 844 801
                             </a>
                         </div>
 
                         {/* Links */}
-                        <div className="flex flex-col gap-4">
-                            <h3 className="font-bold text-xl text-black mb-2">
+                        <div className="flex flex-col gap-3">
+                            <h3 className="font-bold text-xl text-black mb-1">
                                 Links
                             </h3>
                             <a
                                 href="#"
-                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                             >
                                 Get an estimate in 2 minutes
                             </a>
                             <a
                                 href="#"
-                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                             >
                                 Portfolio
                             </a>
                             <a
                                 href="#"
-                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                             >
                                 Privacy Policy
                             </a>
                             <a
                                 href="#"
-                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                             >
                                 Tasky
                             </a>
                         </div>
 
                         {/* For Whom */}
-                        <div className="flex flex-col gap-4">
-                            <h3 className="font-bold text-xl text-black mb-2">
+                        <div className="flex flex-col gap-3">
+                            <h3 className="font-bold text-xl text-black mb-1">
                                 For Whom
                             </h3>
                             <a
                                 href="#"
-                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                             >
                                 Software & Tech
                             </a>
                             <a
                                 href="#"
-                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                             >
                                 Product
                             </a>
                             <a
                                 href="#"
-                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                             >
                                 Apps
                             </a>
                             <a
                                 href="#"
-                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                             >
                                 Events & Booths
                             </a>

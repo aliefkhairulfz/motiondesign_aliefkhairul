@@ -265,7 +265,9 @@ function LandingPage() {
                         </span>
                         <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight">
                             We{' '}
-                            <span className="text-orange-600">don't start</span>{' '}
+                            <span className="text-orange-600">
+                                don&apos;t start
+                            </span>{' '}
                             with animation.
                             <br />
                             We start with{' '}
@@ -302,12 +304,13 @@ function LandingPage() {
                                     </span>
                                 </h3>
                                 <p className="text-neutral-600 text-lg">
-                                    We don't write a feature list. We write the
-                                    path from "what is this?" to "I want this."
-                                    Every line has a job.
+                                    We don&apos;t write a feature list. We write
+                                    the path from &quot;what is this?&quot; to
+                                    &quot;I want this.&quot; Every line has a
+                                    job.
                                 </p>
                             </div>
-                            <div className="w-full aspect-[4/3] bg-neutral-200 rounded-2xl flex items-center justify-center text-neutral-500 font-medium">
+                            <div className="w-full aspect-4/3 bg-neutral-200 rounded-2xl flex items-center justify-center text-neutral-500 font-medium">
                                 Script & Core Narrative Preview
                             </div>
                         </div>
@@ -332,12 +335,12 @@ function LandingPage() {
                                 </h3>
                                 <p className="text-neutral-600 text-lg">
                                     Every scene is shown first: how it looks,
-                                    what happens, and why we're doing it this
-                                    way. So you know what we're making before we
-                                    make it.
+                                    what happens, and why we&apos;re doing it
+                                    this way. So you know what we&apos;re making
+                                    before we make it.
                                 </p>
                             </div>
-                            <div className="w-full aspect-[4/3] bg-neutral-200 rounded-2xl flex items-center justify-center text-neutral-500 font-medium">
+                            <div className="w-full aspect-4/3 bg-neutral-200 rounded-2xl flex items-center justify-center text-neutral-500 font-medium">
                                 Storyboard Frame Overview
                             </div>
                         </div>
@@ -366,7 +369,7 @@ function LandingPage() {
                                     Get a video
                                 </Button>
                             </div>
-                            <div className="w-full aspect-[4/3] bg-neutral-200 rounded-2xl flex items-center justify-center text-neutral-500 font-medium">
+                            <div className="w-full aspect-4/3 bg-neutral-200 rounded-2xl flex items-center justify-center text-neutral-500 font-medium">
                                 3D Render & Motion Preview
                             </div>
                         </div>

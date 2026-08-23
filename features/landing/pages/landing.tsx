@@ -1,5 +1,7 @@
 import { Button } from '@/components/ui/button';
 import TabService from '../components/tab-service';
+import { Star } from 'lucide-react';
+import { FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 const myServices = [
     {
@@ -377,6 +379,131 @@ function LandingPage() {
                     {/* PROCESS STEPS CONTAINER */}
                 </div>
                 {/* OUR PROCESS SECTION */}
+
+                {/* FOOTER SECTION */}
+                <footer className="w-full py-24 flex flex-col items-center">
+                    {/* Logo & Rating */}
+                    <div className="flex flex-col items-center gap-2 mb-20">
+                        <h1 className="text-7xl md:text-8xl font-bold tracking-tight text-black">
+                            RedMotion
+                            <sup className="text-3xl md:text-4xl font-medium">
+                                ™
+                            </sup>
+                        </h1>
+                        <div className="flex items-center gap-2 mt-2">
+                            <Star className="w-5 h-5 fill-orange-600 text-orange-600" />
+                            <p className="font-bold text-neutral-900">
+                                5.0 client rating{' '}
+                                <span className="text-neutral-500 font-medium">
+                                    (121)
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Columns */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-4xl w-full mb-24 px-8">
+                        {/* Contact */}
+                        <div className="flex flex-col gap-4">
+                            <h3 className="font-bold text-xl text-black mb-2">
+                                Contact
+                            </h3>
+                            <a
+                                href="mailto:filip@redmotion.works"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                            >
+                                filip@redmotion.works
+                            </a>
+                            <a
+                                href="tel:+48508844801"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                            >
+                                +48 508 844 801
+                            </a>
+                        </div>
+
+                        {/* Links */}
+                        <div className="flex flex-col gap-4">
+                            <h3 className="font-bold text-xl text-black mb-2">
+                                Links
+                            </h3>
+                            <a
+                                href="#"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                            >
+                                Get an estimate in 2 minutes
+                            </a>
+                            <a
+                                href="#"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                            >
+                                Portfolio
+                            </a>
+                            <a
+                                href="#"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                            >
+                                Privacy Policy
+                            </a>
+                            <a
+                                href="#"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                            >
+                                Tasky
+                            </a>
+                        </div>
+
+                        {/* For Whom */}
+                        <div className="flex flex-col gap-4">
+                            <h3 className="font-bold text-xl text-black mb-2">
+                                For Whom
+                            </h3>
+                            <a
+                                href="#"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                            >
+                                Software & Tech
+                            </a>
+                            <a
+                                href="#"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                            >
+                                Product
+                            </a>
+                            <a
+                                href="#"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                            >
+                                Apps
+                            </a>
+                            <a
+                                href="#"
+                                className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium"
+                            >
+                                Events & Booths
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Social Icons */}
+                    <div className="flex items-center gap-6 mb-16">
+                        <a href="#" className="w-12 h-12 rounded-full bg-gradient-to-b from-orange-500 to-black flex items-center justify-center text-white hover:scale-110 transition-transform shadow-[0_4px_20px_rgba(234,88,12,0.3)]">
+                            <FaInstagram className="w-5 h-5" />
+                        </a>
+                        <a href="#" className="w-12 h-12 rounded-full bg-gradient-to-b from-orange-500 to-black flex items-center justify-center text-white hover:scale-110 transition-transform shadow-[0_4px_20px_rgba(234,88,12,0.3)]">
+                            <FaLinkedin className="w-5 h-5" />
+                        </a>
+                        <a href="#" className="w-12 h-12 rounded-full bg-gradient-to-b from-orange-500 to-black flex items-center justify-center text-white hover:scale-110 transition-transform shadow-[0_4px_20px_rgba(234,88,12,0.3)]">
+                            <FaYoutube className="w-5 h-5" />
+                        </a>
+                    </div>
+
+                    {/* Copyright */}
+                    <p className="text-neutral-500 font-medium text-sm">
+                        © 2026 RedMotion. All rights reserved.
+                    </p>
+                </footer>
+                {/* FOOTER SECTION */}
             </section>
             {/* MAIN SECTION */}
         </div>

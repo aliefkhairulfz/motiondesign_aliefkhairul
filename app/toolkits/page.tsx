@@ -4,7 +4,7 @@ import { Download, Box, Layers, PlaySquare, Workflow, Zap, Camera, Move3d } from
 import { Button } from '@/components/ui/button';
 import { Footer } from '@/components/shared/footer';
 import Link from 'next/link';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 const ADDONS = [
     {
@@ -57,7 +57,7 @@ const ADDONS = [
     },
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
         opacity: 1,
@@ -67,7 +67,7 @@ const containerVariants = {
     }
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: { 
         opacity: 1, 

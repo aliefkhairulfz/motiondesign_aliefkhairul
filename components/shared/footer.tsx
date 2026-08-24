@@ -22,7 +22,7 @@ export function Footer({ className }: { className?: string }) {
             </div>
 
             {/* Columns */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-4xl w-full mb-24 px-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-5xl w-full mb-24 px-8">
                 {/* Contact */}
                 <div className="flex flex-col gap-3">
                     <h3 className="font-bold text-xl text-neutral-900 mb-1">
@@ -83,6 +83,25 @@ export function Footer({ className }: { className?: string }) {
                         className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                     >
                         Saas/Apps
+                    </Link>
+                </div>
+
+                {/* Crew */}
+                <div className="flex flex-col gap-3">
+                    <h3 className="font-bold text-xl text-neutral-900 mb-1">
+                        Crew
+                    </h3>
+                    <Link
+                        href="/sign-in"
+                        className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
+                    >
+                        Sign In
+                    </Link>
+                    <Link
+                        href="/sign-up"
+                        className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
+                    >
+                        Sign Up
                     </Link>
                 </div>
             </div>

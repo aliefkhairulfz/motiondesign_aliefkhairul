@@ -54,7 +54,7 @@ export function Header() {
                 {/* Navigation (Desktop) */}
                 <nav className="hidden md:flex items-center gap-8">
                     <Link
-                        href="#"
+                        href="/portfolio"
                         className="text-sm font-medium text-neutral-400 hover:text-neutral-100 transition-colors"
                     >
                         Portfolio
@@ -134,7 +134,7 @@ export function Header() {
                 {/* Navigation Links */}
                 <div className="flex flex-col gap-5 my-auto">
                     <Link
-                        href="#"
+                        href="/portfolio"
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="group flex items-baseline justify-between py-2.5 border-b border-neutral-900 hover:border-neutral-800 transition-colors"
                     >

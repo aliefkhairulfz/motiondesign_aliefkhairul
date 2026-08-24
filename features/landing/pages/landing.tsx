@@ -246,12 +246,13 @@ function LandingPage() {
                         <h3 className="font-bold text-xl text-neutral-900 mb-1">
                             Contact
                         </h3>
-                        <a
+                        <Link
                             href="mailto:filip@redmotion.works"
+                            target="_blank"
                             className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                         >
-                            rmt@redmotion.works
-                        </a>
+                            rmtdesign@redmotion.works
+                        </Link>
                         <a
                             href="tel:+48508844801"
                             className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
@@ -272,13 +273,13 @@ function LandingPage() {
                             Get an estimate in 2 minutes
                         </Link>
                         <Link
-                            href="#"
+                            href="/portfolio"
                             className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                         >
                             Portfolio
                         </Link>
                         <Link
-                            href="#"
+                            href="/privacy-policy"
                             className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                         >
                             Privacy Policy

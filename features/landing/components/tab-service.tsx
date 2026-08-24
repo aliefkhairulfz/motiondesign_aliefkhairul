@@ -98,7 +98,7 @@ function TabService(props: TabService) {
                 <div className="absolute bottom-0 left-45 right-45 h-[2px] bg-neutral-300 pointer-events-none" />
 
                 <ul className="flex min-w-max relative">
-                    {props.myServicesData.map((service, i) => (
+                    {props.myServicesData.slice(0, 5).map((service, i) => (
                         <li
                             key={service.id}
                             className={cn(
@@ -154,14 +154,14 @@ function TabService(props: TabService) {
                         }}
                         className="grid grid-cols-1 md:grid-cols-2 gap-4"
                     >
-                        {props.myServicesData[selectedIdx.idx].galleries.map(
-                            gallery => (
+                        {props.myServicesData[selectedIdx.idx].galleries
+                            .slice(0, 4)
+                            .map(gallery => (
                                 <GalleryCard
                                     key={gallery.id}
                                     gallery={gallery}
                                 />
-                            )
-                        )}
+                            ))}
                     </motion.div>
                 </AnimatePresence>
             </div>

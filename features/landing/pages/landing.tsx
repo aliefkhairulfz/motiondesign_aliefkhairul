@@ -11,6 +11,8 @@ import {
 } from '../components/process';
 import { myServicesData } from '../data';
 import { Footer } from '@/components/shared/footer';
+import { DotBackground } from '@/components/ui/dot-background';
+import { FAQ } from '../components/faq';
 
 function LandingPage() {
     return (
@@ -30,13 +32,16 @@ function LandingPage() {
                 <div className="absolute inset-0 bg-neutral-900/50 pointer-events-none -z-10"></div>
 
                 {/* CTA */}
-                <motion.div 
+                <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="max-w-4xl mx-auto px-4 flex flex-col items-center justify-center gap-4 relative z-10 -mt-16">
-                    <h1 className="text-5xl sm:text-7xl font-bold text-center text-neutral-100">
-                        Make your product clear and Hard to ignore.
+                    className="max-w-4xl mx-auto px-4 flex flex-col items-center justify-center gap-4 relative z-10 -mt-16"
+                >
+                    <h1 className="text-5xl sm:text-6xl font-black text-center text-neutral-100 tracking-tight">
+                        <span>Your product clear and Hard to ignore.</span>
+                        <span>With </span>
+                        <span className="text-red-500 font-black">Effectt</span>
                     </h1>
 
                     <p className="max-w-xl text-center text-neutral-300 font-semibold">
@@ -66,7 +71,7 @@ function LandingPage() {
             {/* HERO SECTION & VIDEO BG */}
 
             {/* MAIN SECTION */}
-            <section className="relative z-10 px-4 py-8 sm:p-10 text-neutral-950 w-full min-h-screen rounded-t-[32px] sm:rounded-t-[60px] bg-neutral-200 noise-[100,20,25] -mt-20 sm:-mt-50 shadow-2xl shadow-neutral-900 overflow-x-hidden">
+            <DotBackground className="px-4 py-8 sm:p-10 text-neutral-950 min-h-screen rounded-t-[32px] sm:rounded-t-[60px] -mt-20 sm:-mt-50 shadow-2xl shadow-neutral-900 overflow-x-hidden">
                 {/* RATE */}
                 <ul className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-neutral-300 ring-1 ring-neutral-300 rounded-[20px]">
                     <li className="flex flex-col items-center justify-center py-4 md:py-8">
@@ -99,12 +104,13 @@ function LandingPage() {
                 {/* What kind of video do you need? */}
                 <div className="container mx-auto mt-20 px-4">
                     {/* TEXT */}
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
+                        viewport={{ once: true, margin: '-100px' }}
                         transition={{ duration: 0.7 }}
-                        className="flex flex-col items-center justify-center gap-4">
+                        className="flex flex-col items-center justify-center gap-4"
+                    >
                         <h1 className="text-4xl md:text-6xl font-bold text-center max-w-2xl">
                             What do you want your product to say?
                         </h1>
@@ -125,12 +131,13 @@ function LandingPage() {
                 {/* OUR PROCESS SECTION */}
                 <div className="container mx-auto px-0 sm:px-4 pb-12 sm:pb-24">
                     {/* PROCESS HEADER (FULL SCREEN INTRO) */}
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="min-h-screen flex flex-col items-center justify-center gap-6 text-center max-w-5xl mx-auto py-20">
+                        className="min-h-screen flex flex-col items-center justify-center gap-6 text-center max-w-5xl mx-auto py-20"
+                    >
                         <span className="text-xs sm:text-sm font-mono font-bold text-neutral-400 uppercase tracking-widest">
                             Our process
                         </span>
@@ -154,12 +161,13 @@ function LandingPage() {
                     <div className="flex flex-col">
                         {/* STEP 1: THE IDEA */}
                         <div className="sm:min-h-screen flex items-center py-10 sm:py-24">
-                            <motion.div 
+                            <motion.div
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "-100px" }}
+                                viewport={{ once: true, margin: '-100px' }}
                                 transition={{ duration: 0.6 }}
-                                className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 lg:gap-16 items-center w-full">
+                                className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 lg:gap-16 items-center w-full"
+                            >
                                 <div className="flex flex-col gap-6 max-w-xl">
                                     <div className="flex items-center gap-3">
                                         <span className="flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-neutral-100 font-bold text-sm">
@@ -191,12 +199,13 @@ function LandingPage() {
 
                         {/* STEP 2: THE BUILD */}
                         <div className="sm:min-h-screen flex items-center py-10 sm:py-24">
-                            <motion.div 
+                            <motion.div
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "-100px" }}
+                                viewport={{ once: true, margin: '-100px' }}
                                 transition={{ duration: 0.6 }}
-                                className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 lg:gap-16 items-center w-full">
+                                className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 lg:gap-16 items-center w-full"
+                            >
                                 <div className="flex flex-col gap-6 max-w-xl">
                                     <div className="flex items-center gap-3">
                                         <span className="flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-neutral-100 font-bold text-sm">
@@ -227,12 +236,13 @@ function LandingPage() {
 
                         {/* STEP 3: THE MOTION */}
                         <div className="sm:min-h-screen flex items-center py-10 sm:py-24">
-                            <motion.div 
+                            <motion.div
                                 initial={{ opacity: 0, y: 50 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, margin: "-100px" }}
+                                viewport={{ once: true, margin: '-100px' }}
                                 transition={{ duration: 0.6 }}
-                                className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 lg:gap-16 items-center w-full">
+                                className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 lg:gap-16 items-center w-full"
+                            >
                                 <div className="flex flex-col gap-6 max-w-xl items-start">
                                     <div className="flex items-center gap-3">
                                         <span className="flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-neutral-100 font-bold text-sm">
@@ -264,7 +274,11 @@ function LandingPage() {
                     {/* PROCESS STEPS CONTAINER */}
                 </div>
                 {/* OUR PROCESS SECTION */}
-            </section>
+
+                {/* FAQ SECTION */}
+                <FAQ />
+                {/* FAQ SECTION */}
+            </DotBackground>
             {/* MAIN SECTION */}
 
             {/* FOOTER SECTION */}

@@ -4,7 +4,7 @@ import PortfolioPageContent from '@/features/portfolio/pages/portfolio';
 export const metadata: Metadata = {
     title: 'Portfolio & Selected Works',
     description:
-        'Explore 3D commercial product animations, SaaS product films, and visual stories created by RedMotion for global brands.'
+        'Explore 3D commercial product animations, SaaS product films, and visual stories created by Effectt for global brands.'
 };
 
 export default function PortfolioPage() {

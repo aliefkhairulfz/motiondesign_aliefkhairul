@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function SignInPage() {
     return (
-        <main className="min-h-screen bg-neutral-200 text-neutral-950 flex flex-col justify-center px-4 sm:px-6">
+        <main className="min-h-screen bg-neutral-100 text-neutral-950 flex flex-col justify-center px-4 sm:px-6">
             <SignInForm />
         </main>
     );

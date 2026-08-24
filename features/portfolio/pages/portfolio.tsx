@@ -66,11 +66,13 @@ function GalleryCard({ gallery }: { gallery: GalleryItem }) {
     );
 }
 
+import { DotBackground } from '@/components/ui/dot-background';
+
 export function PortfolioPage() {
-    const [selectedIdx, setSelectedIdx] = useState<number>(0);
+    const allGalleries = myServicesData.flatMap(service => service.galleries);
 
     return (
-        <main className="min-h-screen bg-neutral-200 text-neutral-950 pt-28 sm:pt-36 flex flex-col justify-between">
+        <DotBackground className="min-h-screen pt-28 sm:pt-36 flex flex-col justify-between text-neutral-950">
             <div className="max-w-5xl mx-auto flex flex-col items-center px-4 sm:px-6 w-full pb-24">
                 {/* HEADER */}
                 <div className="text-center mb-12 flex flex-col items-center">
@@ -82,29 +84,9 @@ export function PortfolioPage() {
                     </p>
                 </div>
 
-                {/* TABS (Identical to tab-service.tsx in landing page) */}
-                <div className="flex items-center justify-center w-full max-w-2xl overflow-x-auto">
-                    <ul className="flex min-w-max border-b border-neutral-300">
-                        {myServicesData.map((service, i) => (
-                            <li
-                                key={service.id}
-                                className={cn(
-                                    'py-4 px-6 md:px-10 border-b-2 font-semibold text-base sm:text-lg cursor-pointer transition-colors',
-                                    selectedIdx === i
-                                        ? 'border-neutral-900 text-neutral-950 font-bold'
-                                        : 'border-transparent text-neutral-500 hover:text-neutral-800'
-                                )}
-                                onClick={() => setSelectedIdx(i)}
-                            >
-                                {service.label}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-
-                {/* GRID */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 w-full">
-                    {myServicesData[selectedIdx].galleries.map(gallery => (
+                {/* GRID GALLERY */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 w-full">
+                    {allGalleries.map(gallery => (
                         <GalleryCard key={gallery.id} gallery={gallery} />
                     ))}
                 </div>
@@ -112,7 +94,7 @@ export function PortfolioPage() {
 
             {/* SHARED FOOTER */}
             <Footer />
-        </main>
+        </DotBackground>
     );
 }
 

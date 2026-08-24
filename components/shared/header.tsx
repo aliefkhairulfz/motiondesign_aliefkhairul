@@ -47,8 +47,8 @@ export function Header() {
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="flex items-center cursor-pointer z-50"
                 >
-                    <span className="text-2xl text-red-500 font-bold tracking-tight flex items-start">
-                        RedMotion
+                    <span className="text-2xl text-red-500 font-black tracking-tight flex items-start">
+                        Effectt
                         <TbTrademark className="w-4 h-4 ml-0.5 mt-1 text-red-500" />
                     </span>
                 </Link>
@@ -226,10 +226,10 @@ export function Header() {
 
                     <div className="flex items-center justify-between text-xs text-neutral-500 pt-3 border-t border-neutral-900">
                         <a
-                            href="mailto:filip@redmotion.works"
+                            href="mailto:filip@effectt.works"
                             className="hover:text-neutral-300 transition-colors"
                         >
-                            filip@redmotion.works
+                            filip@effectt.works
                         </a>
                         <div className="flex items-center gap-4 text-lg text-neutral-400">
                             <Link

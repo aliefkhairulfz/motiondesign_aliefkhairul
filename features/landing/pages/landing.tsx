@@ -26,18 +26,18 @@ function LandingPage() {
                 {/* CTA */}
                 <div className="max-w-4xl mx-auto px-4 flex flex-col items-center justify-center gap-4 relative z-10 -mt-16">
                     <h1 className="text-5xl sm:text-7xl font-bold text-center text-neutral-100">
-                        Make your product easy to understand and hard to ignore.
+                        Make your product clear and Hard to ignore.
                     </h1>
 
                     <p className="max-w-xl text-center text-neutral-300 font-semibold">
-                        We create 3D product videos, SaaS explainers, launch
-                        ads, and event films for companies that need people to
-                        get the idea fast.
+                        We create 3D product videos and motion design that
+                        transform ideas into visual stories - helping products
+                        communicate faster, look better, and stay memorable.
                     </p>
 
                     <div className="flex items-center gap-4 mt-2">
                         <Button className="p-6 font-bold bg-neutral-200 text-neutral-900 hover:bg-neutral-200">
-                            Get a Video
+                            Get your Video
                         </Button>
                         <Button
                             variant={'outline'}
@@ -87,10 +87,12 @@ function LandingPage() {
                     {/* TEXT */}
                     <div className="flex flex-col items-center justify-center gap-4">
                         <h1 className="text-4xl md:text-6xl font-bold text-center max-w-2xl">
-                            What kind of video do you need?
+                            What do you want your product to say?
                         </h1>
-                        <p className="text-neutral-600">
-                            Pick a type and see if it fits your project.
+                        <p className="text-neutral-600 max-w-xl text-center">
+                            Every project needs a different kind of story.
+                            Explore the formats I create and find the one that
+                            fits your idea.
                         </p>
                     </div>
                     {/* TEXT */}
@@ -108,26 +110,26 @@ function LandingPage() {
                         <span className="text-sm font-medium text-neutral-500 uppercase tracking-wider">
                             Our process
                         </span>
+
                         <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight">
-                            We{' '}
-                            <span className="text-orange-600">
-                                don&apos;t start
-                            </span>{' '}
-                            with animation.
+                            We don&apos;t start with{' '}
+                            <span className="text-orange-600">animation.</span>
                             <br />
                             We start with{' '}
-                            <span className="text-orange-600">the point.</span>
+                            <span className="text-orange-600">the idea.</span>
                         </h2>
+
                         <p className="text-neutral-600 max-w-xl text-base sm:text-lg mt-2">
-                            First, we define what the video needs to say, who
-                            needs to understand it, and why they should care.
+                            we start by understanding the idea, finding the
+                            right visual direction, and figuring out how motion
+                            can support it.
                         </p>
                     </div>
                     {/* PROCESS HEADER */}
 
                     {/* PROCESS STEPS CONTAINER */}
                     <div className="flex flex-col gap-32 mt-24">
-                        {/* STEP 1: SCRIPTWRITING */}
+                        {/* STEP 1: THE IDEA */}
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                             <div className="flex flex-col gap-6 max-w-xl">
                                 <div className="flex items-center gap-3">
@@ -135,32 +137,31 @@ function LandingPage() {
                                         1
                                     </span>
                                     <span className="text-neutral-600 font-medium text-base">
-                                        Scriptwriting
+                                        The Idea
                                     </span>
                                 </div>
+
                                 <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold">
-                                    A video only{' '}
+                                    Before anything moves, there&apos;s an{' '}
                                     <span className="text-orange-600">
-                                        works
-                                    </span>{' '}
-                                    if the{' '}
-                                    <span className="text-orange-600">
-                                        script does.
+                                        idea.
                                     </span>
                                 </h3>
+
                                 <p className="text-neutral-600 text-lg">
-                                    We don&apos;t write a feature list. We write
-                                    the path from &quot;what is this?&quot; to
-                                    &quot;I want this.&quot; Every line has a
-                                    job.
+                                    We start by exploring the concept,
+                                    references, and visual direction to
+                                    understand what the piece needs to
+                                    communicate.
                                 </p>
                             </div>
+
                             <div className="w-full aspect-4/3 bg-neutral-200 rounded-2xl flex items-center justify-center text-neutral-500 font-medium">
-                                Script & Core Narrative Preview
+                                References & Visual Direction
                             </div>
                         </div>
 
-                        {/* STEP 2: STORYBOARD */}
+                        {/* STEP 2: THE BUILD */}
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                             <div className="flex flex-col gap-6 max-w-xl">
                                 <div className="flex items-center gap-3">
@@ -168,31 +169,30 @@ function LandingPage() {
                                         2
                                     </span>
                                     <span className="text-neutral-600 font-medium text-base">
-                                        Storyboard
+                                        The Build
                                     </span>
                                 </div>
+
                                 <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
-                                    You{' '}
-                                    <span className="bg-linear-to-r from-orange-500 via-orange-600 to-red-600 bg-clip-text text-transparent">
-                                        see the
+                                    Then the idea becomes{' '}
+                                    <span className="text-orange-600">
+                                        something real.
                                     </span>
-                                    <br />
-                                    <span className="bg-linear-to-r from-orange-500 via-orange-600 to-red-600 bg-clip-text text-transparent">
-                                        video
-                                    </span>{' '}
-                                    before production starts.
                                 </h3>
+
                                 <p className="text-neutral-600 text-lg">
-                                    Every scene is shown first: how it looks,
-                                    what happens, and why we&apos;re doing it
-                                    this way. So you know what we&apos;re making
-                                    before we make it.
+                                    We build the scene in 3D, from modeling and
+                                    materials to lighting, cameras, and
+                                    animation.
                                 </p>
                             </div>
-                            <StoryboardFlow />
+
+                            <div className="w-full aspect-4/3 bg-neutral-200 rounded-2xl flex items-center justify-center text-neutral-500 font-medium">
+                                Blender & 3D Process
+                            </div>
                         </div>
 
-                        {/* STEP 3: PRODUCTION */}
+                        {/* STEP 3: THE MOTION */}
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                             <div className="flex flex-col gap-6 max-w-xl items-start">
                                 <div className="flex items-center gap-3">
@@ -200,24 +200,26 @@ function LandingPage() {
                                         3
                                     </span>
                                     <span className="text-neutral-600 font-medium text-base">
-                                        Production
+                                        The Motion
                                     </span>
                                 </div>
+
                                 <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold">
-                                    You get regular progress updates.
+                                    Finally, every detail starts to{' '}
+                                    <span className="text-orange-600">
+                                        move.
+                                    </span>
                                 </h3>
+
                                 <p className="text-neutral-600 text-lg">
-                                    With the plan clear, production moves
-                                    faster. You see progress during the process,
-                                    and the final video stays focused on the
-                                    goal: explain, sell, or launch.
+                                    We refine the animation, lighting,
+                                    composition, and post-production until
+                                    everything feels right.
                                 </p>
-                                <Button className="mt-2 p-6 font-bold bg-neutral-900 text-neutral-100 hover:bg-neutral-800 rounded-xl">
-                                    Get a video
-                                </Button>
                             </div>
+
                             <div className="w-full aspect-4/3 bg-neutral-200 rounded-2xl flex items-center justify-center text-neutral-500 font-medium">
-                                3D Render & Motion Preview
+                                Final Render & Motion
                             </div>
                         </div>
                     </div>

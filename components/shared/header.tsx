@@ -86,7 +86,7 @@ export function Header() {
                                 href="#"
                                 className="px-4 py-2.5 text-sm text-neutral-300 hover:text-neutral-100 transition-colors mx-1 rounded-md"
                             >
-                                Blender Addon
+                                Creator Toolkits
                             </Link>
                             <Link
                                 href="#"
@@ -102,7 +102,9 @@ export function Header() {
                 <div className="flex items-center gap-4 z-50">
                     {/* CTA Button (Desktop) */}
                     <div className="hidden md:block">
-                        <Button className="p-5 font-bold">Get a Video</Button>
+                        <Button className="p-5 font-bold">
+                            Get your Video
+                        </Button>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -209,7 +211,7 @@ export function Header() {
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="w-full py-6 font-bold text-base bg-neutral-100 text-neutral-950 hover:bg-neutral-200 rounded-xl shadow-lg shadow-black/40 transition-transform active:scale-[0.98]"
                     >
-                        Get a Video
+                        Get your Video
                     </Button>
 
                     <div className="flex items-center justify-between text-xs text-neutral-500 pt-3 border-t border-neutral-900">

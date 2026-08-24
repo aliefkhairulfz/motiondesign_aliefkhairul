@@ -1,6 +1,5 @@
 import StartForm from '@/features/start/components/start-form';
 import type { Metadata } from 'next';
-import { Footer } from '@/components/shared/footer';
 
 export const metadata: Metadata = {
     title: 'Start a Project | RedMotion',
@@ -13,7 +12,6 @@ export default function StartPage() {
             <div className="max-w-3xl mx-auto px-4 sm:px-6 w-full pb-20 flex justify-center">
                 <StartForm />
             </div>
-            <Footer />
         </main>
     );
 }

@@ -1,5 +1,8 @@
+'use client';
+
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import TabService from '../components/tab-service';
 import {
     StepIdeaStoryboard,
@@ -27,7 +30,11 @@ function LandingPage() {
                 <div className="absolute inset-0 bg-neutral-900/50 pointer-events-none -z-10"></div>
 
                 {/* CTA */}
-                <div className="max-w-4xl mx-auto px-4 flex flex-col items-center justify-center gap-4 relative z-10 -mt-16">
+                <motion.div 
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
+                    className="max-w-4xl mx-auto px-4 flex flex-col items-center justify-center gap-4 relative z-10 -mt-16">
                     <h1 className="text-5xl sm:text-7xl font-bold text-center text-neutral-100">
                         Make your product clear and Hard to ignore.
                     </h1>
@@ -53,7 +60,7 @@ function LandingPage() {
                             </Button>
                         </Link>
                     </div>
-                </div>
+                </motion.div>
                 {/* CTA */}
             </section>
             {/* HERO SECTION & VIDEO BG */}
@@ -92,7 +99,12 @@ function LandingPage() {
                 {/* What kind of video do you need? */}
                 <div className="container mx-auto mt-20 px-4">
                     {/* TEXT */}
-                    <div className="flex flex-col items-center justify-center gap-4">
+                    <motion.div 
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true, margin: "-100px" }}
+                        transition={{ duration: 0.7 }}
+                        className="flex flex-col items-center justify-center gap-4">
                         <h1 className="text-4xl md:text-6xl font-bold text-center max-w-2xl">
                             What do you want your product to say?
                         </h1>
@@ -101,7 +113,7 @@ function LandingPage() {
                             Explore the formats I create and find the one that
                             fits your idea.
                         </p>
-                    </div>
+                    </motion.div>
                     {/* TEXT */}
 
                     {/* TAB & CHOOSE */}
@@ -113,7 +125,12 @@ function LandingPage() {
                 {/* OUR PROCESS SECTION */}
                 <div className="container mx-auto px-0 sm:px-4 pb-12 sm:pb-24">
                     {/* PROCESS HEADER (FULL SCREEN INTRO) */}
-                    <div className="min-h-screen flex flex-col items-center justify-center gap-6 text-center max-w-5xl mx-auto py-20">
+                    <motion.div 
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                        className="min-h-screen flex flex-col items-center justify-center gap-6 text-center max-w-5xl mx-auto py-20">
                         <span className="text-xs sm:text-sm font-mono font-bold text-neutral-400 uppercase tracking-widest">
                             Our process
                         </span>
@@ -130,14 +147,19 @@ function LandingPage() {
                             right visual direction, and figuring out how motion
                             can support it.
                         </p>
-                    </div>
+                    </motion.div>
                     {/* PROCESS HEADER */}
 
                     {/* PROCESS STEPS CONTAINER */}
                     <div className="flex flex-col">
                         {/* STEP 1: THE IDEA */}
                         <div className="sm:min-h-screen flex items-center py-10 sm:py-24">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 lg:gap-16 items-center w-full">
+                            <motion.div 
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "-100px" }}
+                                transition={{ duration: 0.6 }}
+                                className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 lg:gap-16 items-center w-full">
                                 <div className="flex flex-col gap-6 max-w-xl">
                                     <div className="flex items-center gap-3">
                                         <span className="flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-neutral-100 font-bold text-sm">
@@ -164,12 +186,17 @@ function LandingPage() {
                                 </div>
 
                                 <StepIdeaStoryboard />
-                            </div>
+                            </motion.div>
                         </div>
 
                         {/* STEP 2: THE BUILD */}
                         <div className="sm:min-h-screen flex items-center py-10 sm:py-24">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 lg:gap-16 items-center w-full">
+                            <motion.div 
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "-100px" }}
+                                transition={{ duration: 0.6 }}
+                                className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 lg:gap-16 items-center w-full">
                                 <div className="flex flex-col gap-6 max-w-xl">
                                     <div className="flex items-center gap-3">
                                         <span className="flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-neutral-100 font-bold text-sm">
@@ -195,12 +222,17 @@ function LandingPage() {
                                 </div>
 
                                 <StepBuildStoryboard />
-                            </div>
+                            </motion.div>
                         </div>
 
                         {/* STEP 3: THE MOTION */}
                         <div className="sm:min-h-screen flex items-center py-10 sm:py-24">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 lg:gap-16 items-center w-full">
+                            <motion.div 
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "-100px" }}
+                                transition={{ duration: 0.6 }}
+                                className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 lg:gap-16 items-center w-full">
                                 <div className="flex flex-col gap-6 max-w-xl items-start">
                                     <div className="flex items-center gap-3">
                                         <span className="flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-neutral-100 font-bold text-sm">
@@ -226,7 +258,7 @@ function LandingPage() {
                                 </div>
 
                                 <StepMotionStoryboard />
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                     {/* PROCESS STEPS CONTAINER */}

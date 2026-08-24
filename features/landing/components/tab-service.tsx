@@ -3,6 +3,7 @@
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import { useState, useRef, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export type GalleryItem = {
     id: string;
@@ -47,7 +48,11 @@ function GalleryCard({ gallery }: { gallery: GalleryItem }) {
     }, [isHovered]);
 
     return (
-        <div
+        <motion.div
+            variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0 }
+            }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             className="group relative w-full aspect-video bg-neutral-900 rounded-2xl overflow-hidden cursor-pointer"
@@ -78,7 +83,7 @@ function GalleryCard({ gallery }: { gallery: GalleryItem }) {
                     {gallery.serviceType}
                 </p>
             </div>
-        </div>
+        </motion.div>
     );
 }
 
@@ -86,36 +91,79 @@ function TabService(props: TabService) {
     const [selectedIdx, setSelectedIdx] = useState<{ idx: number }>({ idx: 0 });
 
     return (
-        <div className="flex flex-col items-center justify-center mt-8">
-            {/* TAB */}
-            <div className="flex items-center justify-center w-full max-w-2xl overflow-x-auto">
-                <ul className="flex min-w-max">
+        <div className="flex flex-col items-center justify-center mt-8 w-full">
+            {/* TAB HEADER */}
+            <div className="flex items-center justify-center w-full max-w-2xl overflow-x-auto relative mb-8">
+                {/* Background line */}
+                <div className="absolute bottom-0 left-45 right-45 h-[2px] bg-neutral-300 pointer-events-none" />
+
+                <ul className="flex min-w-max relative">
                     {props.myServicesData.map((service, i) => (
                         <li
                             key={service.id}
                             className={cn(
-                                'py-4 px-6 md:px-10 border-b-2 font-semibold cursor-pointer',
+                                'relative py-4 px-6 md:px-10 font-bold cursor-pointer transition-colors text-lg',
                                 selectedIdx.idx === i
-                                    ? 'border-neutral-900'
-                                    : 'border-neutral-300'
+                                    ? 'text-neutral-900'
+                                    : 'text-neutral-500 hover:text-neutral-700'
                             )}
                             onClick={() => setSelectedIdx({ idx: i })}
                         >
                             {service.label}
+                            {/* Animated Active Indicator */}
+                            {selectedIdx.idx === i && (
+                                <motion.div
+                                    layoutId="activeTabIndicator"
+                                    className="absolute left-0 right-0 bottom-0 h-[2px] bg-neutral-900 z-10"
+                                    transition={{
+                                        type: 'spring',
+                                        stiffness: 300,
+                                        damping: 30
+                                    }}
+                                />
+                            )}
                         </li>
                     ))}
                 </ul>
             </div>
-            {/* TAB */}
+            {/* TAB HEADER */}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-8 w-full max-w-5xl">
-                {props.myServicesData[selectedIdx.idx].galleries.map(
-                    gallery => {
-                        return (
-                            <GalleryCard key={gallery.id} gallery={gallery} />
-                        );
-                    }
-                )}
+            {/* TAB CONTENT */}
+            <div className="w-full max-w-5xl min-h-[300px]">
+                <AnimatePresence mode="wait">
+                    <motion.div
+                        key={selectedIdx.idx}
+                        initial="hidden"
+                        animate="visible"
+                        exit="hidden"
+                        variants={{
+                            hidden: {
+                                opacity: 0,
+                                transition: {
+                                    staggerChildren: 0.05,
+                                    staggerDirection: -1
+                                }
+                            },
+                            visible: {
+                                opacity: 1,
+                                transition: {
+                                    staggerChildren: 0.1,
+                                    delayChildren: 0.1
+                                }
+                            }
+                        }}
+                        className="grid grid-cols-1 md:grid-cols-2 gap-4"
+                    >
+                        {props.myServicesData[selectedIdx.idx].galleries.map(
+                            gallery => (
+                                <GalleryCard
+                                    key={gallery.id}
+                                    gallery={gallery}
+                                />
+                            )
+                        )}
+                    </motion.div>
+                </AnimatePresence>
             </div>
         </div>
     );

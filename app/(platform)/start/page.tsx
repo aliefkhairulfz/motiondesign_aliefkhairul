@@ -2,7 +2,7 @@ import StartForm from '@/features/start/components/start-form';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Start a Project | RedMotion',
+    title: 'Start a Project',
     description: "Tell us about your product and let's make a video."
 };
 

@@ -5,6 +5,13 @@ import { db } from "@/db";
 import { inquiries } from "@/db/schema";
 import { desc } from "drizzle-orm";
 import { LogoutButton } from "./logout-button";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Admin Dashboard | RedMotion",
+    description: "Manage inquiries and site settings."
+};
+
 
 export default async function AdminDashboard() {
     const session = await auth.api.getSession({

@@ -9,6 +9,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import { submitInquiry } from '@/app/actions/inquiry';
 
 const formSchema = z.object({
@@ -39,7 +40,9 @@ function ButtonGroup({
     return (
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {options.map(opt => (
-                <button
+                <motion.button
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
                     key={opt}
                     type="button"
                     onClick={() => onChange(opt)}
@@ -51,7 +54,7 @@ function ButtonGroup({
                     )}
                 >
                     {opt}
-                </button>
+                </motion.button>
             ))}
         </div>
     );
@@ -98,7 +101,12 @@ export default function StartForm() {
 
     if (isSuccess) {
         return (
-            <div className="w-full max-w-2xl flex flex-col gap-6 animate-in fade-in duration-500">
+            <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="w-full max-w-2xl flex flex-col gap-6"
+            >
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-neutral-950 mb-2">
                     Thanks for reaching out.
                 </h1>
@@ -114,13 +122,23 @@ export default function StartForm() {
                         Back to Home
                     </Button>
                 </Link>
-            </div>
+            </motion.div>
         );
     }
 
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0 }
+    };
+
     return (
-        <div className="w-full flex flex-col pt-4 pb-24">
-            <div className="mb-12">
+        <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
+            className="w-full flex flex-col pt-4 pb-24"
+        >
+            <motion.div variants={itemVariants} className="mb-12">
                 <p className="text-neutral-600 text-sm sm:text-base font-medium mb-2 uppercase tracking-widest font-mono">
                     Start here
                 </p>
@@ -128,14 +146,18 @@ export default function StartForm() {
                     Let&apos;s make
                     <br className="hidden sm:block" /> your video.
                 </h1>
-            </div>
+            </motion.div>
 
-            <form
+            <motion.form
+                variants={itemVariants}
                 onSubmit={handleSubmit(onSubmit)}
                 className="flex flex-col gap-10"
             >
                 {/* Email Field */}
-                <div className="flex flex-col gap-2">
+                <motion.div
+                    variants={itemVariants}
+                    className="flex flex-col gap-2"
+                >
                     <label className="text-sm font-medium text-neutral-700">
                         Email
                     </label>
@@ -153,10 +175,13 @@ export default function StartForm() {
                             {errors.email.message}
                         </p>
                     )}
-                </div>
+                </motion.div>
 
                 {/* Description Field */}
-                <div className="flex flex-col gap-2">
+                <motion.div
+                    variants={itemVariants}
+                    className="flex flex-col gap-2"
+                >
                     <label className="text-sm font-medium text-neutral-700">
                         What are we making?
                     </label>
@@ -174,10 +199,13 @@ export default function StartForm() {
                             {errors.description.message}
                         </p>
                     )}
-                </div>
+                </motion.div>
 
                 {/* Deadline Field */}
-                <div className="flex flex-col gap-3">
+                <motion.div
+                    variants={itemVariants}
+                    className="flex flex-col gap-3"
+                >
                     <label className="text-sm font-medium text-neutral-700">
                         Deadline
                     </label>
@@ -197,10 +225,13 @@ export default function StartForm() {
                             {errors.deadline.message}
                         </p>
                     )}
-                </div>
+                </motion.div>
 
                 {/* Length Field */}
-                <div className="flex flex-col gap-3">
+                <motion.div
+                    variants={itemVariants}
+                    className="flex flex-col gap-3"
+                >
                     <label className="text-sm font-medium text-neutral-700">
                         Length
                     </label>
@@ -220,10 +251,13 @@ export default function StartForm() {
                             {errors.length.message}
                         </p>
                     )}
-                </div>
+                </motion.div>
 
                 {/* Budget Field */}
-                <div className="flex flex-col gap-3">
+                <motion.div
+                    variants={itemVariants}
+                    className="flex flex-col gap-3"
+                >
                     <label className="text-sm font-medium text-neutral-700">
                         Budget
                     </label>
@@ -243,10 +277,13 @@ export default function StartForm() {
                             {errors.budget.message}
                         </p>
                     )}
-                </div>
+                </motion.div>
 
                 {/* Submit and Footer */}
-                <div className="flex flex-col gap-6 mt-4">
+                <motion.div
+                    variants={itemVariants}
+                    className="flex flex-col gap-6 mt-4"
+                >
                     <Button
                         type="submit"
                         disabled={isSubmitting}
@@ -267,8 +304,8 @@ export default function StartForm() {
                         </Link>
                         .
                     </p>
-                </div>
-            </form>
-        </div>
+                </motion.div>
+            </motion.form>
+        </motion.div>
     );
 }

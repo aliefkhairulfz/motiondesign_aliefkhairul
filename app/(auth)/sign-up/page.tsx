@@ -2,7 +2,7 @@ import SignUpForm from '@/features/auth/components/sign-up-form';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Sign Up | RedMotion',
+    title: 'Sign Up',
     description: 'Join the studio.',
 };
 

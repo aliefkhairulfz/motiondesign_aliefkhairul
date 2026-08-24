@@ -14,8 +14,8 @@ const manrope = Manrope({
 
 export const metadata: Metadata = {
     title: {
-        default: 'RedMotion | 3D Motion Design Studio',
-        template: '%s | RedMotion'
+        default: 'Effectt | 3D Motion Design Studio',
+        template: '%s | Effectt'
     },
     description: 'We create 3D product videos and motion design that transform ideas into visual stories.',
     keywords: ['3D Motion Design', 'Product Video', 'Animation Studio', 'Blender', 'SaaS Videos'],
@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     openGraph: {
         type: 'website',
         locale: 'en_US',
-        url: 'https://redmotion.works',
-        title: 'RedMotion | 3D Motion Design Studio',
+        url: 'https://effectt.works',
+        title: 'Effectt | 3D Motion Design Studio',
         description: 'We create 3D product videos and motion design that transform ideas into visual stories.',
-        siteName: 'RedMotion'
+        siteName: 'Effectt'
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'RedMotion | 3D Motion Design Studio',
+        title: 'Effectt | 3D Motion Design Studio',
         description: 'We create 3D product videos and motion design that transform ideas into visual stories.',
         creator: '@aliefkhairul'
     }

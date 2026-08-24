@@ -4,7 +4,7 @@ import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
     title: 'Privacy Policy',
-    description: 'Privacy Policy for RedMotion Studio.'
+    description: 'Privacy Policy for Effectt Studio.'
 };
 
 export default function PrivacyPolicyPage() {
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
                             1. Overview
                         </h2>
                         <p>
-                            At <strong>RedMotion</strong>, we create 3D product
+                            At <strong>Effectt</strong>, we create 3D product
                             animation and motion design for global brands and
                             technology companies. We value your trust and are
                             committed to protecting your personal information
@@ -161,10 +161,10 @@ export default function PrivacyPolicyPage() {
                         <p className="font-mono text-sm text-neutral-300">
                             Email:{' '}
                             <a
-                                href="mailto:filip@redmotion.works"
+                                href="mailto:filip@effectt.works"
                                 className="text-orange-500 hover:underline"
                             >
-                                rmtdesign@redmotion.works
+                                rmtdesign@effectt.works
                             </a>
                         </p>
                     </section>
@@ -172,7 +172,7 @@ export default function PrivacyPolicyPage() {
 
                 {/* Footer Back Link */}
                 <div className="mt-14 pt-8 border-t border-neutral-800 flex items-center justify-between text-xs font-mono text-neutral-500">
-                    <span>© 2026 RedMotion</span>
+                    <span>© 2026 Effectt</span>
                     <Link
                         href="/"
                         className="text-neutral-400 hover:text-neutral-200 transition-colors"

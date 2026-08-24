@@ -8,7 +8,7 @@ import { LogoutButton } from "./logout-button";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Admin Dashboard | RedMotion",
+    title: "Admin Dashboard | Effectt",
     description: "Manage inquiries and site settings."
 };
 

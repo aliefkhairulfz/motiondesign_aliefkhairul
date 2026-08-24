@@ -1,9 +1,11 @@
 import Link from 'next/link';
 import { Footer } from '@/components/shared/footer';
 
+import { DotBackground } from '@/components/ui/dot-background';
+
 export function AboutPageContent() {
     return (
-        <main className="min-h-screen bg-neutral-200 text-neutral-950 pt-28 sm:pt-36 flex flex-col justify-between">
+        <DotBackground className="min-h-screen pt-28 sm:pt-36 flex flex-col justify-between text-neutral-950">
             <div className="max-w-3xl mx-auto px-4 sm:px-6 w-full pb-20">
                 {/* HEADER */}
                 <div className="mb-12">
@@ -23,7 +25,7 @@ export function AboutPageContent() {
                             Who We Are
                         </h2>
                         <p>
-                            RedMotion is an independent motion design studio
+                            Effectt is an independent motion design studio
                             founded by Alief Khairul. We partner with hardware
                             startups, tech companies, and consumer brands to
                             turn complex products into engaging visual stories.
@@ -99,10 +101,10 @@ export function AboutPageContent() {
                             Have an upcoming launch or project? Email us
                             directly at:{' '}
                             <a
-                                href="mailto:rmtdesign@redmotion.works"
+                                href="mailto:rmtdesign@effectt.works"
                                 className="text-orange-600 font-semibold hover:underline"
                             >
-                                rmtdesign@redmotion.works
+                                rmtdesign@effectt.works
                             </a>
                         </p>
                         <div className="pt-2">
@@ -119,7 +121,7 @@ export function AboutPageContent() {
 
             {/* SHARED FOOTER */}
             <Footer />
-        </main>
+        </DotBackground>
     );
 }
 

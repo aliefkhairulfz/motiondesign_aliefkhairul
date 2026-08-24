@@ -6,12 +6,14 @@ export const metadata: Metadata = {
     description: "Tell us about your product and let's make a video."
 };
 
+import { DotBackground } from '@/components/ui/dot-background';
+
 export default function StartPage() {
     return (
-        <main className="min-h-screen bg-neutral-200 text-neutral-950 pt-24 sm:pt-36 flex flex-col justify-between">
+        <DotBackground className="min-h-screen pt-24 sm:pt-36 flex flex-col justify-between text-neutral-950">
             <div className="max-w-3xl mx-auto px-4 sm:px-6 w-full pb-20 flex justify-center">
                 <StartForm />
             </div>
-        </main>
+        </DotBackground>
     );
 }

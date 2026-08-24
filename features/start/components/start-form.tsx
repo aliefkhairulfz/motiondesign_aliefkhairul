@@ -293,7 +293,7 @@ export default function StartForm() {
                     </Button>
 
                     <p className="text-[11px] sm:text-xs text-neutral-500 max-w-xl leading-relaxed">
-                        By sending this form, you agree that RedMotion may
+                        By sending this form, you agree that Effectt may
                         process your details to respond to your inquiry. Read
                         our{' '}
                         <Link

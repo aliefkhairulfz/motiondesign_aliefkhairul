@@ -7,14 +7,14 @@ export function Footer({ className }: { className?: string }) {
     return (
         <footer
             className={cn(
-                'relative z-10 w-full py-24 flex flex-col items-center bg-neutral-200 text-neutral-950',
+                'relative z-10 w-full py-24 flex flex-col items-center bg-neutral-100 text-neutral-950',
                 className
             )}
         >
             {/* Logo & Trademark */}
             <div className="flex items-start gap-2 mb-20 text-red-500">
-                <h2 className="text-7xl md:text-9xl font-bold tracking-tighter leading-none bg-linear-to-br from-orange-500 to-red-600 bg-clip-text text-transparent pb-2">
-                    RedMotion
+                <h2 className="text-7xl md:text-9xl font-black tracking-tighter leading-none bg-linear-to-br from-orange-500 to-red-600 bg-clip-text text-transparent pb-2">
+                    Effectt
                 </h2>
                 <span className="flex items-start justify-center">
                     <TbTrademark className="w-12 h-12 md:w-16 md:h-16 text-orange-600 mt-2 ml-1" />
@@ -29,10 +29,10 @@ export function Footer({ className }: { className?: string }) {
                         Contact
                     </h3>
                     <a
-                        href="mailto:rmtdesign@redmotion.works"
+                        href="mailto:rmtdesign@effectt.works"
                         className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                     >
-                        rmtdesign@redmotion.works
+                        rmtdesign@effectt.works
                     </a>
                     <a
                         href="tel:+6287757479647"
@@ -131,7 +131,7 @@ export function Footer({ className }: { className?: string }) {
 
             {/* Copyright */}
             <p className="text-neutral-500 font-medium text-sm">
-                © 2026 RedMotion. All rights reserved.
+                © 2026 Effectt. All rights reserved.
             </p>
         </footer>
     );

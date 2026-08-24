@@ -60,7 +60,7 @@ export function Header() {
                         Portfolio
                     </Link>
                     <Link
-                        href="#"
+                        href="/about"
                         className="text-sm font-medium text-neutral-400 hover:text-neutral-100 transition-colors"
                     >
                         About
@@ -144,7 +144,7 @@ export function Header() {
                     </Link>
 
                     <Link
-                        href="#"
+                        href="/about"
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="group flex items-baseline justify-between py-2.5 border-b border-neutral-900 hover:border-neutral-800 transition-colors"
                     >

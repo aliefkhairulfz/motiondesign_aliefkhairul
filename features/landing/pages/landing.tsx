@@ -1,7 +1,5 @@
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { FaBehanceSquare, FaInstagram } from 'react-icons/fa';
-import { TbTrademark } from 'react-icons/tb';
 import TabService from '../components/tab-service';
 import {
     StepIdeaStoryboard,
@@ -9,6 +7,7 @@ import {
     StepMotionStoryboard
 } from '../components/process';
 import { myServicesData } from '../data';
+import { Footer } from '@/components/shared/footer';
 
 function LandingPage() {
     return (
@@ -43,12 +42,14 @@ function LandingPage() {
                         <Button className="p-6 font-bold bg-neutral-200 text-neutral-900 hover:bg-neutral-200">
                             Get your Video
                         </Button>
-                        <Button
-                            variant={'outline'}
-                            className="p-6 font-bold text-neutral-100 border-neutral-700 bg-neutral-900/40 hover:bg-neutral-900/60 hover:text-neutral-100 backdrop-blur-sm"
-                        >
-                            See Portfolio
-                        </Button>
+                        <Link href="/portfolio">
+                            <Button
+                                variant={'outline'}
+                                className="p-6 font-bold text-neutral-100 border-neutral-700 bg-neutral-900/40 hover:bg-neutral-900/60 hover:text-neutral-100 backdrop-blur-sm cursor-pointer"
+                            >
+                                See Portfolio
+                            </Button>
+                        </Link>
                     </div>
                 </div>
                 {/* CTA */}
@@ -228,110 +229,7 @@ function LandingPage() {
             {/* MAIN SECTION */}
 
             {/* FOOTER SECTION */}
-            <footer className="relative z-10 w-full py-24 flex flex-col items-center bg-neutral-200">
-                {/* Logo & Rating */}
-                <div className="flex items-start gap-2 mb-20 text-red-500">
-                    <h1 className="text-7xl md:text-9xl font-bold tracking-tighter leading-none bg-linear-to-br from-orange-500 to-red-600 bg-clip-text text-transparent pb-2">
-                        RedMotion
-                    </h1>
-                    <h1 className="text-7xl md:text-9xl font-bold tracking-tighter leading-none bg-linear-to-br from-orange-500 to-red-600 bg-clip-text text-transparent pb-2 flex items-start justify-center">
-                        <TbTrademark className="w-12 h-12 md:w-16 md:h-16 text-orange-600 mt-2 ml-1" />
-                    </h1>
-                </div>
-
-                {/* Columns */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-4xl w-full mb-24 px-8">
-                    {/* Contact */}
-                    <div className="flex flex-col gap-3">
-                        <h3 className="font-bold text-xl text-neutral-900 mb-1">
-                            Contact
-                        </h3>
-                        <Link
-                            href="mailto:filip@redmotion.works"
-                            target="_blank"
-                            className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
-                        >
-                            rmtdesign@redmotion.works
-                        </Link>
-                        <a
-                            href="tel:+48508844801"
-                            className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
-                        >
-                            +62 877-5747-9647
-                        </a>
-                    </div>
-
-                    {/* Links */}
-                    <div className="flex flex-col gap-3">
-                        <h3 className="font-bold text-xl text-neutral-900 mb-1">
-                            Links
-                        </h3>
-                        <Link
-                            href="#"
-                            className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
-                        >
-                            Get an estimate in 2 minutes
-                        </Link>
-                        <Link
-                            href="/portfolio"
-                            className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
-                        >
-                            Portfolio
-                        </Link>
-                        <Link
-                            href="/privacy-policy"
-                            className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
-                        >
-                            Privacy Policy
-                        </Link>
-                    </div>
-
-                    {/* For Whom */}
-                    <div className="flex flex-col gap-3">
-                        <h3 className="font-bold text-xl text-neutral-900 mb-1">
-                            For Whom
-                        </h3>
-                        <a
-                            href="#"
-                            className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
-                        >
-                            Product
-                        </a>
-                        <a
-                            href="#"
-                            className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
-                        >
-                            Saas/Apps
-                        </a>
-                    </div>
-                </div>
-
-                {/* Social Icons */}
-                <div className="flex items-center gap-6 mb-16">
-                    <Link
-                        href="https://www.instagram.com/aliefmagic_/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-12 h-12 rounded-full bg-linear-to-b from-orange-500 to-neutral-900 flex items-center justify-center text-neutral-100 hover:scale-110 transition-transform shadow-[0_4px_20px_rgba(234,88,12,0.3)]"
-                    >
-                        <FaInstagram className="w-5 h-5" />
-                    </Link>
-
-                    <Link
-                        href="https://www.behance.net/aliefkhairul"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-12 h-12 rounded-full bg-linear-to-b from-orange-500 to-neutral-900 flex items-center justify-center text-neutral-100 hover:scale-110 transition-transform shadow-[0_4px_20px_rgba(234,88,12,0.3)]"
-                    >
-                        <FaBehanceSquare className="w-5 h-5" />
-                    </Link>
-                </div>
-
-                {/* Copyright */}
-                <p className="text-neutral-500 font-medium text-sm">
-                    © 2026 RedMotion. All rights reserved.
-                </p>
-            </footer>
+            <Footer />
             {/* FOOTER SECTION */}
         </div>
     );

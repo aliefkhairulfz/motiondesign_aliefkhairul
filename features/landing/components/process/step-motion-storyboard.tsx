@@ -1,22 +1,15 @@
 'use client';
 
-import { CheckCircle2 } from 'lucide-react';
-
 export function StepMotionStoryboard() {
     return (
         <div className="w-full bg-neutral-900 border border-neutral-800 rounded-2xl p-5 sm:p-6 text-neutral-200 flex flex-col justify-between shadow-xl">
             {/* HEADER */}
             <div className="flex items-center justify-between border-b border-neutral-800 pb-3">
                 <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-orange-600" />
                     <span className="text-xs font-semibold text-neutral-200 tracking-wide">
                         Animation & Final Polish
                     </span>
                 </div>
-
-                <span className="text-[11px] font-mono text-neutral-500 bg-neutral-950 px-2 py-0.5 rounded border border-neutral-800">
-                    Step 3 of 3
-                </span>
             </div>
 
             {/* 3 MOTION FRAMES */}
@@ -67,10 +60,6 @@ export function StepMotionStoryboard() {
                                 strokeLinecap="round"
                             />
                         </svg>
-
-                        <span className="absolute top-1.5 left-1.5 text-[9px] font-mono text-neutral-400 bg-neutral-900/80 px-1 rounded">
-                            01
-                        </span>
                     </div>
 
                     <div>
@@ -150,10 +139,6 @@ export function StepMotionStoryboard() {
                                 fill="#ea580c"
                             />
                         </svg>
-
-                        <span className="absolute top-1.5 left-1.5 text-[9px] font-mono text-neutral-400 bg-neutral-900/80 px-1 rounded">
-                            02
-                        </span>
                     </div>
 
                     <div>
@@ -209,10 +194,6 @@ export function StepMotionStoryboard() {
                                 fill="#ffffff"
                             />
                         </svg>
-
-                        <span className="absolute top-1.5 left-1.5 text-[9px] font-mono text-neutral-400 bg-neutral-900/80 px-1 rounded">
-                            03
-                        </span>
                     </div>
 
                     <div>
@@ -229,8 +210,6 @@ export function StepMotionStoryboard() {
 
             {/* FOOTER */}
             <div className="flex items-center gap-2 border-t border-neutral-800 pt-3 text-[11px] text-neutral-400">
-                <CheckCircle2 className="w-4 h-4 text-orange-600 shrink-0" />
-
                 <span>
                     We refine every detail until the motion feels right.
                 </span>

@@ -62,9 +62,9 @@ export default function PrivacyPolicyPage() {
                                 submitted through our contact channels.
                             </li>
                             <li>
-                                <strong>Project Files & 3D Assets:</strong> CAD
-                                files, reference images, style guides, and
-                                creative briefs provided for production.
+                                <strong>Project Files & 3D Assets:</strong>
+                                reference images, style guides, and creative
+                                briefs provided for production.
                             </li>
                             <li>
                                 <strong>Technical Data:</strong> Basic browser

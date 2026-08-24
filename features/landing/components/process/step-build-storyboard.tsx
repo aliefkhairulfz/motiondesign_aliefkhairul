@@ -2,7 +2,7 @@
 
 export function StepBuildStoryboard() {
     return (
-        <div className="w-full min-h-[380px] sm:min-h-[440px] md:min-h-[480px] bg-neutral-900 border border-neutral-800 rounded-3xl p-6 sm:p-8 text-neutral-200 flex flex-col justify-between shadow-2xl">
+        <div className="w-full min-h-[300px] sm:min-h-[440px] md:min-h-[480px] bg-neutral-900 border border-neutral-800 rounded-2xl sm:rounded-3xl p-3 sm:p-8 text-neutral-200 flex flex-col justify-between shadow-2xl">
             {/* HEADER */}
             <div className="flex items-center justify-between pb-4">
                 <div className="flex items-center gap-2.5">
@@ -16,7 +16,7 @@ export function StepBuildStoryboard() {
             <div className="grid grid-cols-3 gap-3.5 sm:gap-4 my-auto py-4">
                 {/* FRAME 1: MODELING */}
                 <div className="flex flex-col gap-2.5">
-                    <div className="aspect-video w-full rounded-2xl bg-neutral-950 border border-neutral-800/90 flex items-center justify-center relative overflow-hidden p-3">
+                    <div className="aspect-video w-full rounded-2xl bg-neutral-950 border border-neutral-800/90 flex items-center justify-center relative overflow-hidden p-1.5 sm:p-3">
                         <svg viewBox="0 0 100 60" className="w-full h-full">
                             <ellipse
                                 cx="50"
@@ -60,7 +60,7 @@ export function StepBuildStoryboard() {
 
                 {/* FRAME 2: MATERIALS */}
                 <div className="flex flex-col gap-2.5">
-                    <div className="aspect-video w-full rounded-2xl bg-neutral-950 border border-neutral-800/90 flex items-center justify-center relative overflow-hidden p-3">
+                    <div className="aspect-video w-full rounded-2xl bg-neutral-950 border border-neutral-800/90 flex items-center justify-center relative overflow-hidden p-1.5 sm:p-3">
                         <svg viewBox="0 0 100 60" className="w-full h-full">
                             <circle
                                 cx="28"
@@ -122,7 +122,7 @@ export function StepBuildStoryboard() {
 
                 {/* FRAME 3: LIGHTING */}
                 <div className="flex flex-col gap-2.5">
-                    <div className="aspect-video w-full rounded-2xl bg-neutral-950 border border-neutral-800/90 flex items-center justify-center relative overflow-hidden p-3">
+                    <div className="aspect-video w-full rounded-2xl bg-neutral-950 border border-neutral-800/90 flex items-center justify-center relative overflow-hidden p-1.5 sm:p-3">
                         <svg viewBox="0 0 100 60" className="w-full h-full">
                             <defs>
                                 <radialGradient

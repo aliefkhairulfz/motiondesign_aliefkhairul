@@ -7,11 +7,13 @@ import Link from 'next/link';
 import { TbTrademark } from 'react-icons/tb';
 import { FaInstagram, FaBehanceSquare } from 'react-icons/fa';
 import { cn } from '@/lib/utils';
+import { useRouter } from 'next/navigation';
 
 export function Header() {
     const [isResourcesOpen, setIsResourcesOpen] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isMobileResourcesOpen, setIsMobileResourcesOpen] = useState(true);
+    const r = useRouter();
 
     // Close mobile menu when screen size increases to desktop range
     useEffect(() => {
@@ -102,7 +104,10 @@ export function Header() {
                 <div className="flex items-center gap-4 z-50">
                     {/* CTA Button (Desktop) */}
                     <div className="hidden md:block">
-                        <Button className="p-5 font-bold">
+                        <Button
+                            onClick={() => r.push('/start')}
+                            className="p-5 font-bold cursor-pointer"
+                        >
                             Get your Video
                         </Button>
                     </div>
@@ -207,12 +212,17 @@ export function Header() {
 
                 {/* Bottom Footer Section */}
                 <div className="flex flex-col gap-6 pt-6 mt-auto">
-                    <Button
+                    <Link
+                        href="/start"
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="w-full py-6 font-bold text-base bg-neutral-100 text-neutral-950 hover:bg-neutral-200 rounded-xl shadow-lg shadow-black/40 transition-transform active:scale-[0.98]"
                     >
-                        Get your Video
-                    </Button>
+                        <Button
+                            onClick={() => r.push('/start')}
+                            className="w-full py-6 cursor-pointer font-bold text-base bg-neutral-100 text-neutral-950 hover:bg-neutral-200 rounded-xl shadow-lg shadow-black/40 transition-transform active:scale-[0.98]"
+                        >
+                            Get your Video
+                        </Button>
+                    </Link>
 
                     <div className="flex items-center justify-between text-xs text-neutral-500 pt-3 border-t border-neutral-900">
                         <a

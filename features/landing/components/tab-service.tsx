@@ -72,7 +72,7 @@ function GalleryCard({ gallery }: { gallery: GalleryItem }) {
                     isHovered ? 'opacity-100' : 'opacity-0 pointer-events-none'
                 )}
             />
-            <div className="absolute inset-0 bg-linear-to-t from-neutral-900/80 via-neutral-900/20 to-transparent flex items-end justify-between p-6 text-neutral-100 pointer-events-none z-10">
+            <div className="absolute inset-0 bg-linear-to-t from-neutral-900/80 via-neutral-900/20 to-transparent flex items-end justify-between p-3 sm:p-6 text-neutral-100 pointer-events-none z-10">
                 <p className="text-lg font-bold">{gallery.client}</p>
                 <p className="text-sm font-semibold text-neutral-300">
                     {gallery.serviceType}

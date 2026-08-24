@@ -2,7 +2,7 @@
 
 export function StepIdeaStoryboard() {
     return (
-        <div className="w-full min-h-[380px] sm:min-h-[440px] md:min-h-[480px] bg-neutral-900 border border-neutral-800 rounded-3xl p-6 sm:p-8 text-neutral-200 flex flex-col justify-between shadow-2xl">
+        <div className="w-full min-h-[300px] sm:min-h-[440px] md:min-h-[480px] bg-neutral-900 border border-neutral-800 rounded-2xl sm:rounded-3xl p-3 sm:p-8 text-neutral-200 flex flex-col justify-between shadow-2xl">
             {/* HEADER */}
             <div className="flex items-center justify-between pb-4">
                 <div className="flex items-center gap-2.5">
@@ -16,7 +16,7 @@ export function StepIdeaStoryboard() {
             <div className="grid grid-cols-3 gap-3.5 sm:gap-4 my-auto py-4">
                 {/* FRAME 1: REFERENCES */}
                 <div className="flex flex-col gap-2.5">
-                    <div className="aspect-video w-full rounded-2xl bg-neutral-950 border border-neutral-800/90 flex items-center justify-center relative overflow-hidden p-3">
+                    <div className="aspect-video w-full rounded-2xl bg-neutral-950 border border-neutral-800/90 flex items-center justify-center relative overflow-hidden p-1.5 sm:p-3">
                         <svg viewBox="0 0 100 60" className="w-full h-full">
                             {/* Reference cards */}
                             <rect
@@ -88,7 +88,7 @@ export function StepIdeaStoryboard() {
 
                 {/* FRAME 2: COMPOSITION */}
                 <div className="flex flex-col gap-2.5">
-                    <div className="aspect-video w-full rounded-2xl bg-neutral-950 border border-neutral-800/90 flex items-center justify-center relative overflow-hidden p-3">
+                    <div className="aspect-video w-full rounded-2xl bg-neutral-950 border border-neutral-800/90 flex items-center justify-center relative overflow-hidden p-1.5 sm:p-3">
                         <svg viewBox="0 0 100 60" className="w-full h-full">
                             {/* Composition frame */}
                             <rect
@@ -149,7 +149,7 @@ export function StepIdeaStoryboard() {
 
                 {/* FRAME 3: DIRECTION */}
                 <div className="flex flex-col gap-2.5">
-                    <div className="aspect-video w-full rounded-2xl bg-neutral-950 border border-neutral-800/90 flex items-center justify-center relative overflow-hidden p-3">
+                    <div className="aspect-video w-full rounded-2xl bg-neutral-950 border border-neutral-800/90 flex items-center justify-center relative overflow-hidden p-1.5 sm:p-3">
                         <svg viewBox="0 0 100 60" className="w-full h-full">
                             {/* Final direction preview */}
                             <defs>

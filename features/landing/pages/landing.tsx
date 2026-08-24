@@ -38,10 +38,12 @@ function LandingPage() {
                         communicate faster, look better, and stay memorable.
                     </p>
 
-                    <div className="flex items-center gap-4 mt-2">
-                        <Button className="p-6 font-bold bg-neutral-200 text-neutral-900 hover:bg-neutral-200">
-                            Get your Video
-                        </Button>
+                    <div className="flex items-center justify-center gap-3 mt-2">
+                        <Link href="/start">
+                            <Button className="cursor-pointer p-4 sm:p-6 font-bold bg-neutral-200 text-neutral-900 hover:bg-neutral-200">
+                                Get your Video
+                            </Button>
+                        </Link>
                         <Link href="/portfolio">
                             <Button
                                 variant={'outline'}
@@ -57,7 +59,7 @@ function LandingPage() {
             {/* HERO SECTION & VIDEO BG */}
 
             {/* MAIN SECTION */}
-            <section className="relative z-10 p-10 text-neutral-950 w-full min-h-screen rounded-t-[60px] bg-neutral-200 -mt-50 shadow-2xl shadow-neutral-900">
+            <section className="relative z-10 px-4 py-8 sm:p-10 text-neutral-950 w-full min-h-screen rounded-t-[32px] sm:rounded-t-[60px] bg-neutral-200 noise-[100,20,25] -mt-20 sm:-mt-50 shadow-2xl shadow-neutral-900 overflow-x-hidden">
                 {/* RATE */}
                 <ul className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-neutral-300 ring-1 ring-neutral-300 rounded-[20px]">
                     <li className="flex flex-col items-center justify-center py-4 md:py-8">
@@ -109,7 +111,7 @@ function LandingPage() {
                 {/* What kind of video do you need? */}
 
                 {/* OUR PROCESS SECTION */}
-                <div className="container mx-auto px-4 pb-24">
+                <div className="container mx-auto px-0 sm:px-4 pb-12 sm:pb-24">
                     {/* PROCESS HEADER (FULL SCREEN INTRO) */}
                     <div className="min-h-screen flex flex-col items-center justify-center gap-6 text-center max-w-5xl mx-auto py-20">
                         <span className="text-xs sm:text-sm font-mono font-bold text-neutral-400 uppercase tracking-widest">
@@ -119,7 +121,6 @@ function LandingPage() {
                         <h2 className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-tight leading-[1.08]">
                             We don&apos;t start with{' '}
                             <span className="text-orange-600">animation.</span>
-                            <br />
                             We start with{' '}
                             <span className="text-orange-600">the idea.</span>
                         </h2>
@@ -135,8 +136,8 @@ function LandingPage() {
                     {/* PROCESS STEPS CONTAINER */}
                     <div className="flex flex-col">
                         {/* STEP 1: THE IDEA */}
-                        <div className="min-h-screen flex items-center py-16 sm:py-24">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
+                        <div className="sm:min-h-screen flex items-center py-10 sm:py-24">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 lg:gap-16 items-center w-full">
                                 <div className="flex flex-col gap-6 max-w-xl">
                                     <div className="flex items-center gap-3">
                                         <span className="flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-neutral-100 font-bold text-sm">
@@ -167,8 +168,8 @@ function LandingPage() {
                         </div>
 
                         {/* STEP 2: THE BUILD */}
-                        <div className="min-h-screen flex items-center py-16 sm:py-24">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
+                        <div className="sm:min-h-screen flex items-center py-10 sm:py-24">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 lg:gap-16 items-center w-full">
                                 <div className="flex flex-col gap-6 max-w-xl">
                                     <div className="flex items-center gap-3">
                                         <span className="flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-neutral-100 font-bold text-sm">
@@ -198,8 +199,8 @@ function LandingPage() {
                         </div>
 
                         {/* STEP 3: THE MOTION */}
-                        <div className="min-h-screen flex items-center py-16 sm:py-24">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
+                        <div className="sm:min-h-screen flex items-center py-10 sm:py-24">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-12 lg:gap-16 items-center w-full">
                                 <div className="flex flex-col gap-6 max-w-xl items-start">
                                     <div className="flex items-center gap-3">
                                         <span className="flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-neutral-100 font-bold text-sm">

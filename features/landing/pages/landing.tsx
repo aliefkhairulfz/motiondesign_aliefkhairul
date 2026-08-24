@@ -38,10 +38,12 @@ function LandingPage() {
                         communicate faster, look better, and stay memorable.
                     </p>
 
-                    <div className="flex items-center gap-4 mt-2">
-                        <Button className="p-6 font-bold bg-neutral-200 text-neutral-900 hover:bg-neutral-200">
-                            Get your Video
-                        </Button>
+                    <div className="flex items-center justify-center gap-3 mt-2">
+                        <Link href="/start">
+                            <Button className="cursor-pointer p-4 sm:p-6 font-bold bg-neutral-200 text-neutral-900 hover:bg-neutral-200">
+                                Get your Video
+                            </Button>
+                        </Link>
                         <Link href="/portfolio">
                             <Button
                                 variant={'outline'}

@@ -21,7 +21,7 @@ function LandingPage() {
                     muted
                     playsInline
                     className="absolute inset-0 w-full h-full object-cover -z-10"
-                    src="https://res.cloudinary.com/diljekoto/video/upload/v1787507933/Visser_-_Luxy_Skincare_Revisi_2_dmvgfx.mp4"
+                    src="https://res.cloudinary.com/diljekoto/video/upload/v1787554639/PortfolioSequence_for_web_1_fwf1f9.mp4"
                 />
                 {/* VIDEO OVERLAY (Radial gradient vignette using neutral-900, darker) */}
                 <div className="absolute inset-0 bg-neutral-900/50 pointer-events-none -z-10"></div>
@@ -109,14 +109,14 @@ function LandingPage() {
                 {/* What kind of video do you need? */}
 
                 {/* OUR PROCESS SECTION */}
-                <div className="container mx-auto mt-32 px-4 pb-24">
-                    {/* PROCESS HEADER */}
-                    <div className="flex flex-col items-center justify-center gap-4 text-center max-w-4xl mx-auto">
-                        <span className="text-sm font-medium text-neutral-500 uppercase tracking-wider">
+                <div className="container mx-auto px-4 pb-24">
+                    {/* PROCESS HEADER (FULL SCREEN INTRO) */}
+                    <div className="min-h-screen flex flex-col items-center justify-center gap-6 text-center max-w-5xl mx-auto py-20">
+                        <span className="text-xs sm:text-sm font-mono font-bold text-neutral-400 uppercase tracking-widest">
                             Our process
                         </span>
 
-                        <h2 className="text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight">
+                        <h2 className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-tight leading-[1.08]">
                             We don&apos;t start with{' '}
                             <span className="text-orange-600">animation.</span>
                             <br />
@@ -124,8 +124,8 @@ function LandingPage() {
                             <span className="text-orange-600">the idea.</span>
                         </h2>
 
-                        <p className="text-neutral-600 max-w-xl text-base sm:text-lg mt-2">
-                            we start by understanding the idea, finding the
+                        <p className="text-neutral-600 max-w-2xl text-lg sm:text-2xl mt-4 font-medium leading-relaxed">
+                            We start by understanding the idea, finding the
                             right visual direction, and figuring out how motion
                             can support it.
                         </p>
@@ -133,93 +133,99 @@ function LandingPage() {
                     {/* PROCESS HEADER */}
 
                     {/* PROCESS STEPS CONTAINER */}
-                    <div className="flex flex-col gap-32 mt-32">
+                    <div className="flex flex-col">
                         {/* STEP 1: THE IDEA */}
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                            <div className="flex flex-col gap-6 max-w-xl">
-                                <div className="flex items-center gap-3">
-                                    <span className="flex items-center justify-center w-7 h-7 rounded-full bg-orange-600 text-neutral-100 font-semibold text-sm">
-                                        1
-                                    </span>
-                                    <span className="text-neutral-600 font-medium text-base">
-                                        Idea
-                                    </span>
+                        <div className="min-h-screen flex items-center py-16 sm:py-24">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
+                                <div className="flex flex-col gap-6 max-w-xl">
+                                    <div className="flex items-center gap-3">
+                                        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-neutral-100 font-bold text-sm">
+                                            1
+                                        </span>
+                                        <span className="text-neutral-600 font-semibold text-base uppercase tracking-wider">
+                                            Idea
+                                        </span>
+                                    </div>
+
+                                    <h3 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+                                        Before anything moves, there&apos;s an{' '}
+                                        <span className="text-orange-600">
+                                            idea.
+                                        </span>
+                                    </h3>
+
+                                    <p className="text-neutral-600 text-lg sm:text-xl leading-relaxed">
+                                        We start by exploring the concept,
+                                        references, and visual direction to
+                                        understand what the piece needs to
+                                        communicate.
+                                    </p>
                                 </div>
 
-                                <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold">
-                                    Before anything moves, there&apos;s an{' '}
-                                    <span className="text-orange-600">
-                                        idea.
-                                    </span>
-                                </h3>
-
-                                <p className="text-neutral-600 text-lg">
-                                    We start by exploring the concept,
-                                    references, and visual direction to
-                                    understand what the piece needs to
-                                    communicate.
-                                </p>
+                                <StepIdeaStoryboard />
                             </div>
-
-                            <StepIdeaStoryboard />
                         </div>
 
                         {/* STEP 2: THE BUILD */}
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                            <div className="flex flex-col gap-6 max-w-xl">
-                                <div className="flex items-center gap-3">
-                                    <span className="flex items-center justify-center w-7 h-7 rounded-full bg-orange-600 text-neutral-100 font-semibold text-sm">
-                                        2
-                                    </span>
-                                    <span className="text-neutral-600 font-medium text-base">
-                                        Build
-                                    </span>
+                        <div className="min-h-screen flex items-center py-16 sm:py-24">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
+                                <div className="flex flex-col gap-6 max-w-xl">
+                                    <div className="flex items-center gap-3">
+                                        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-neutral-100 font-bold text-sm">
+                                            2
+                                        </span>
+                                        <span className="text-neutral-600 font-semibold text-base uppercase tracking-wider">
+                                            Build
+                                        </span>
+                                    </div>
+
+                                    <h3 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+                                        Then the idea becomes{' '}
+                                        <span className="text-orange-600">
+                                            something real.
+                                        </span>
+                                    </h3>
+
+                                    <p className="text-neutral-600 text-lg sm:text-xl leading-relaxed">
+                                        We build the scene in 3D, from modeling
+                                        and materials to lighting, cameras, and
+                                        animation.
+                                    </p>
                                 </div>
 
-                                <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight">
-                                    Then the idea becomes{' '}
-                                    <span className="text-orange-600">
-                                        something real.
-                                    </span>
-                                </h3>
-
-                                <p className="text-neutral-600 text-lg">
-                                    We build the scene in 3D, from modeling and
-                                    materials to lighting, cameras, and
-                                    animation.
-                                </p>
+                                <StepBuildStoryboard />
                             </div>
-
-                            <StepBuildStoryboard />
                         </div>
 
                         {/* STEP 3: THE MOTION */}
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                            <div className="flex flex-col gap-6 max-w-xl items-start">
-                                <div className="flex items-center gap-3">
-                                    <span className="flex items-center justify-center w-7 h-7 rounded-full bg-orange-600 text-neutral-100 font-semibold text-sm">
-                                        3
-                                    </span>
-                                    <span className="text-neutral-600 font-medium text-base">
-                                        Motion
-                                    </span>
+                        <div className="min-h-screen flex items-center py-16 sm:py-24">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
+                                <div className="flex flex-col gap-6 max-w-xl items-start">
+                                    <div className="flex items-center gap-3">
+                                        <span className="flex items-center justify-center w-8 h-8 rounded-full bg-orange-600 text-neutral-100 font-bold text-sm">
+                                            3
+                                        </span>
+                                        <span className="text-neutral-600 font-semibold text-base uppercase tracking-wider">
+                                            Motion
+                                        </span>
+                                    </div>
+
+                                    <h3 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+                                        Finally, every detail starts to{' '}
+                                        <span className="text-orange-600">
+                                            move.
+                                        </span>
+                                    </h3>
+
+                                    <p className="text-neutral-600 text-lg sm:text-xl leading-relaxed">
+                                        We refine the animation, lighting,
+                                        composition, and post-production until
+                                        everything feels right.
+                                    </p>
                                 </div>
 
-                                <h3 className="text-4xl sm:text-5xl md:text-6xl font-bold">
-                                    Finally, every detail starts to{' '}
-                                    <span className="text-orange-600">
-                                        move.
-                                    </span>
-                                </h3>
-
-                                <p className="text-neutral-600 text-lg">
-                                    We refine the animation, lighting,
-                                    composition, and post-production until
-                                    everything feels right.
-                                </p>
+                                <StepMotionStoryboard />
                             </div>
-
-                            <StepMotionStoryboard />
                         </div>
                     </div>
                     {/* PROCESS STEPS CONTAINER */}

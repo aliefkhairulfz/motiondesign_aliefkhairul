@@ -3,7 +3,11 @@ import Link from 'next/link';
 import { FaBehanceSquare, FaInstagram } from 'react-icons/fa';
 import { TbTrademark } from 'react-icons/tb';
 import TabService from '../components/tab-service';
-import StoryboardFlow from '../components/storyboard-flow';
+import {
+    StepIdeaStoryboard,
+    StepBuildStoryboard,
+    StepMotionStoryboard
+} from '../components/process';
 import { myServicesData } from '../data';
 
 function LandingPage() {
@@ -128,7 +132,7 @@ function LandingPage() {
                     {/* PROCESS HEADER */}
 
                     {/* PROCESS STEPS CONTAINER */}
-                    <div className="flex flex-col gap-32 mt-24">
+                    <div className="flex flex-col gap-32 mt-32">
                         {/* STEP 1: THE IDEA */}
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                             <div className="flex flex-col gap-6 max-w-xl">
@@ -137,7 +141,7 @@ function LandingPage() {
                                         1
                                     </span>
                                     <span className="text-neutral-600 font-medium text-base">
-                                        The Idea
+                                        Idea
                                     </span>
                                 </div>
 
@@ -156,9 +160,7 @@ function LandingPage() {
                                 </p>
                             </div>
 
-                            <div className="w-full aspect-4/3 bg-neutral-200 rounded-2xl flex items-center justify-center text-neutral-500 font-medium">
-                                References & Visual Direction
-                            </div>
+                            <StepIdeaStoryboard />
                         </div>
 
                         {/* STEP 2: THE BUILD */}
@@ -169,7 +171,7 @@ function LandingPage() {
                                         2
                                     </span>
                                     <span className="text-neutral-600 font-medium text-base">
-                                        The Build
+                                        Build
                                     </span>
                                 </div>
 
@@ -187,9 +189,7 @@ function LandingPage() {
                                 </p>
                             </div>
 
-                            <div className="w-full aspect-4/3 bg-neutral-200 rounded-2xl flex items-center justify-center text-neutral-500 font-medium">
-                                Blender & 3D Process
-                            </div>
+                            <StepBuildStoryboard />
                         </div>
 
                         {/* STEP 3: THE MOTION */}
@@ -200,7 +200,7 @@ function LandingPage() {
                                         3
                                     </span>
                                     <span className="text-neutral-600 font-medium text-base">
-                                        The Motion
+                                        Motion
                                     </span>
                                 </div>
 
@@ -218,9 +218,7 @@ function LandingPage() {
                                 </p>
                             </div>
 
-                            <div className="w-full aspect-4/3 bg-neutral-200 rounded-2xl flex items-center justify-center text-neutral-500 font-medium">
-                                Final Render & Motion
-                            </div>
+                            <StepMotionStoryboard />
                         </div>
                     </div>
                     {/* PROCESS STEPS CONTAINER */}
@@ -252,13 +250,13 @@ function LandingPage() {
                             href="mailto:filip@redmotion.works"
                             className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                         >
-                            filip@redmotion.works
+                            rmt@redmotion.works
                         </a>
                         <a
                             href="tel:+48508844801"
                             className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                         >
-                            +48 508 844 801
+                            +62 877-5747-9647
                         </a>
                     </div>
 
@@ -267,30 +265,24 @@ function LandingPage() {
                         <h3 className="font-bold text-xl text-neutral-900 mb-1">
                             Links
                         </h3>
-                        <a
+                        <Link
                             href="#"
                             className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                         >
                             Get an estimate in 2 minutes
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="#"
                             className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                         >
                             Portfolio
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="#"
                             className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                         >
                             Privacy Policy
-                        </a>
-                        <a
-                            href="#"
-                            className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
-                        >
-                            Tasky
-                        </a>
+                        </Link>
                     </div>
 
                     {/* For Whom */}
@@ -302,25 +294,13 @@ function LandingPage() {
                             href="#"
                             className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                         >
-                            Software & Tech
-                        </a>
-                        <a
-                            href="#"
-                            className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
-                        >
                             Product
                         </a>
                         <a
                             href="#"
                             className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
                         >
-                            Apps
-                        </a>
-                        <a
-                            href="#"
-                            className="text-neutral-600 hover:text-neutral-900 transition-colors font-medium leading-snug"
-                        >
-                            Events & Booths
+                            Saas/Apps
                         </a>
                     </div>
                 </div>
@@ -328,13 +308,18 @@ function LandingPage() {
                 {/* Social Icons */}
                 <div className="flex items-center gap-6 mb-16">
                     <Link
-                        href="#"
+                        href="https://www.instagram.com/aliefmagic_/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="w-12 h-12 rounded-full bg-linear-to-b from-orange-500 to-neutral-900 flex items-center justify-center text-neutral-100 hover:scale-110 transition-transform shadow-[0_4px_20px_rgba(234,88,12,0.3)]"
                     >
                         <FaInstagram className="w-5 h-5" />
                     </Link>
+
                     <Link
-                        href="#"
+                        href="https://www.behance.net/aliefkhairul"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="w-12 h-12 rounded-full bg-linear-to-b from-orange-500 to-neutral-900 flex items-center justify-center text-neutral-100 hover:scale-110 transition-transform shadow-[0_4px_20px_rgba(234,88,12,0.3)]"
                     >
                         <FaBehanceSquare className="w-5 h-5" />

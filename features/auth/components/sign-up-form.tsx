@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { authClient } from '@/lib/auth-client';
 
 const signUpSchema = z.object({
     name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -36,14 +37,20 @@ export default function SignUpForm() {
         setIsSubmitting(true);
         setError(null);
         try {
-            // Simulated sign up
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            console.log('Signing up...', data);
-            // On success, redirect
-            router.push('/sign-in');
+            const { error: signUpError } = await authClient.signUp.email({
+                email: data.email,
+                password: data.password,
+                name: data.name
+            });
+
+            if (signUpError) {
+                setError(signUpError.message || 'Failed to sign up.');
+            } else {
+                router.push('/sign-in');
+            }
         } catch (e) {
             console.error(e);
-            setError('Failed to sign up.');
+            setError('An unexpected error occurred.');
         } finally {
             setIsSubmitting(false);
         }

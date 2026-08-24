@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { authClient } from '@/lib/auth-client';
 
 const signInSchema = z.object({
     email: z.string().email('Please enter a valid email address.'),
@@ -35,14 +36,19 @@ export default function SignInForm() {
         setIsSubmitting(true);
         setError(null);
         try {
-            // Simulated sign in
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            console.log('Signing in...', data);
-            // On success, redirect to admin or home
-            router.push('/');
+            const { error: signInError } = await authClient.signIn.email({
+                email: data.email,
+                password: data.password,
+            });
+            
+            if (signInError) {
+                setError(signInError.message || 'Failed to sign in. Check your credentials.');
+            } else {
+                router.push('/');
+            }
         } catch (e) {
             console.error(e);
-            setError('Failed to sign in. Check your credentials.');
+            setError('An unexpected error occurred.');
         } finally {
             setIsSubmitting(false);
         }

@@ -57,7 +57,7 @@ function LandingPage() {
             {/* HERO SECTION & VIDEO BG */}
 
             {/* MAIN SECTION */}
-            <section className="relative z-10 p-10 text-neutral-950 w-full min-h-screen rounded-t-[60px] bg-neutral-200 -mt-50 shadow-2xl shadow-neutral-900">
+            <section className="relative z-10 p-10 text-neutral-950 w-full min-h-screen rounded-t-[60px] bg-neutral-200 noise-[100,20,25] -mt-50 shadow-2xl shadow-neutral-900">
                 {/* RATE */}
                 <ul className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-neutral-300 ring-1 ring-neutral-300 rounded-[20px]">
                     <li className="flex flex-col items-center justify-center py-4 md:py-8">
@@ -119,7 +119,6 @@ function LandingPage() {
                         <h2 className="text-5xl sm:text-7xl md:text-8xl font-bold tracking-tight leading-[1.08]">
                             We don&apos;t start with{' '}
                             <span className="text-orange-600">animation.</span>
-                            <br />
                             We start with{' '}
                             <span className="text-orange-600">the idea.</span>
                         </h2>

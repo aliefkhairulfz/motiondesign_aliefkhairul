@@ -9,6 +9,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import { submitInquiry } from '@/app/actions/inquiry';
 
 const formSchema = z.object({
     email: z.string().email('Please enter a valid email address.'),
@@ -76,11 +77,38 @@ export default function StartForm() {
 
     const onSubmit = async (data: FormValues) => {
         setIsSubmitting(true);
-        // Simulate an API call
-        await new Promise((resolve) => setTimeout(resolve, 1500));
-        console.log('Form data:', data);
-        setIsSubmitting(false);
-        setIsSuccess(true);
+
+        try {
+            // 1. Save data to Supabase Database
+            const res = await submitInquiry(data);
+            if (!res.success) {
+                console.error(res.error);
+                // Optionally show error to user, but we can still fallback to telegram
+            }
+
+            // 2. Format the message for Telegram
+            const message = `🚀 *New Project Inquiry*
+
+✉️ *Email:* ${data.email}
+⏳ *Deadline:* ${data.deadline}
+⏱️ *Length:* ${data.length}
+💰 *Budget:* ${data.budget}
+
+📝 *Description:*
+${data.description}`;
+
+            // Indonesian country code +62 for 0877...
+            const telegramUrl = `https://t.me/+6287757479647?text=${encodeURIComponent(message)}`;
+
+            // 3. Open Telegram in a new tab
+            window.open(telegramUrl, '_blank');
+
+            setIsSuccess(true);
+        } catch (error) {
+            console.error('Failed to submit:', error);
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     if (isSuccess) {

@@ -13,10 +13,12 @@ import { submitInquiry } from '@/app/actions/inquiry';
 
 const formSchema = z.object({
     email: z.string().email('Please enter a valid email address.'),
-    description: z.string().min(10, 'Please provide more details about the project.'),
+    description: z
+        .string()
+        .min(10, 'Please provide more details about the project.'),
     deadline: z.string().min(1, 'Please select a timeline.'),
     length: z.string().min(1, 'Please select an estimated length.'),
-    budget: z.string().min(1, 'Please select a budget range.'),
+    budget: z.string().min(1, 'Please select a budget range.')
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -28,7 +30,7 @@ const BUDGET_OPTIONS = ['$2k-$3k', '$4k-$6k', '$7k-$10k', '$10k+'];
 function ButtonGroup({
     options,
     value,
-    onChange,
+    onChange
 }: {
     options: string[];
     value: string;
@@ -36,7 +38,7 @@ function ButtonGroup({
 }) {
     return (
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-            {options.map((opt) => (
+            {options.map(opt => (
                 <button
                     key={opt}
                     type="button"
@@ -45,7 +47,7 @@ function ButtonGroup({
                         'py-3.5 px-4 rounded-xl text-sm font-medium transition-colors border outline-none',
                         value === opt
                             ? 'bg-neutral-900 text-neutral-100 border-neutral-900 shadow-sm'
-                            : 'bg-white/50 text-neutral-600 border-neutral-300 hover:border-neutral-400 hover:text-neutral-900'
+                            : 'bg-transparent text-neutral-600 border-neutral-300 hover:border-neutral-400 hover:text-neutral-900'
                     )}
                 >
                     {opt}
@@ -63,7 +65,7 @@ export default function StartForm() {
         register,
         handleSubmit,
         control,
-        formState: { errors },
+        formState: { errors }
     } = useForm<FormValues>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -71,8 +73,8 @@ export default function StartForm() {
             description: '',
             deadline: '',
             length: '',
-            budget: '',
-        },
+            budget: ''
+        }
     });
 
     const onSubmit = async (data: FormValues) => {
@@ -101,10 +103,14 @@ export default function StartForm() {
                     Thanks for reaching out.
                 </h1>
                 <p className="text-neutral-600 text-lg">
-                    We&apos;ll review your project details and get back to you shortly.
+                    We&apos;ll review your project details and get back to you
+                    shortly.
                 </p>
                 <Link href="/">
-                    <Button variant="outline" className="mt-4 border-neutral-300 text-neutral-700 bg-white hover:bg-neutral-100 hover:text-neutral-900">
+                    <Button
+                        variant="outline"
+                        className="mt-4 border-neutral-300 text-neutral-700 bg-white hover:bg-neutral-100 hover:text-neutral-900"
+                    >
                         Back to Home
                     </Button>
                 </Link>
@@ -119,11 +125,15 @@ export default function StartForm() {
                     Start here
                 </p>
                 <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold tracking-tighter text-neutral-950">
-                    Let&apos;s make<br className="hidden sm:block" /> your video.
+                    Let&apos;s make
+                    <br className="hidden sm:block" /> your video.
                 </h1>
             </div>
 
-            <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-10">
+            <form
+                onSubmit={handleSubmit(onSubmit)}
+                className="flex flex-col gap-10"
+            >
                 {/* Email Field */}
                 <div className="flex flex-col gap-2">
                     <label className="text-sm font-medium text-neutral-700">
@@ -133,12 +143,15 @@ export default function StartForm() {
                         {...register('email')}
                         placeholder="you@company.com"
                         className={cn(
-                            "h-12 bg-white/50 border-neutral-300 focus-visible:ring-1 focus-visible:ring-neutral-400 text-neutral-950 text-base placeholder:text-neutral-500 rounded-xl px-4",
-                            errors.email && "border-red-500 focus-visible:ring-red-500"
+                            'h-12 bg-transparent border-neutral-300 focus-visible:ring-1 focus-visible:ring-neutral-400 text-neutral-950 text-base placeholder:text-neutral-500 rounded-xl px-4',
+                            errors.email &&
+                                'border-red-500 focus-visible:ring-red-500'
                         )}
                     />
                     {errors.email && (
-                        <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>
+                        <p className="text-red-500 text-xs mt-1">
+                            {errors.email.message}
+                        </p>
                     )}
                 </div>
 
@@ -151,12 +164,15 @@ export default function StartForm() {
                         {...register('description')}
                         placeholder="We're launching an EV charger. Website: example.com. Need a short video for an event booth. Goal: make investors understand it fast."
                         className={cn(
-                            "min-h-[140px] bg-white/50 border-neutral-300 focus-visible:ring-1 focus-visible:ring-neutral-400 text-neutral-950 text-base placeholder:text-neutral-500 rounded-xl p-4 resize-y",
-                            errors.description && "border-red-500 focus-visible:ring-red-500"
+                            'min-h-[140px] bg-transparent border-neutral-300 focus-visible:ring-1 focus-visible:ring-neutral-400 text-neutral-950 text-base placeholder:text-neutral-500 rounded-xl p-4 resize-y',
+                            errors.description &&
+                                'border-red-500 focus-visible:ring-red-500'
                         )}
                     />
                     {errors.description && (
-                        <p className="text-red-500 text-xs mt-1">{errors.description.message}</p>
+                        <p className="text-red-500 text-xs mt-1">
+                            {errors.description.message}
+                        </p>
                     )}
                 </div>
 
@@ -177,7 +193,9 @@ export default function StartForm() {
                         )}
                     />
                     {errors.deadline && (
-                        <p className="text-red-500 text-xs mt-1">{errors.deadline.message}</p>
+                        <p className="text-red-500 text-xs mt-1">
+                            {errors.deadline.message}
+                        </p>
                     )}
                 </div>
 
@@ -198,7 +216,9 @@ export default function StartForm() {
                         )}
                     />
                     {errors.length && (
-                        <p className="text-red-500 text-xs mt-1">{errors.length.message}</p>
+                        <p className="text-red-500 text-xs mt-1">
+                            {errors.length.message}
+                        </p>
                     )}
                 </div>
 
@@ -219,7 +239,9 @@ export default function StartForm() {
                         )}
                     />
                     {errors.budget && (
-                        <p className="text-red-500 text-xs mt-1">{errors.budget.message}</p>
+                        <p className="text-red-500 text-xs mt-1">
+                            {errors.budget.message}
+                        </p>
                     )}
                 </div>
 
@@ -234,10 +256,16 @@ export default function StartForm() {
                     </Button>
 
                     <p className="text-[11px] sm:text-xs text-neutral-500 max-w-xl leading-relaxed">
-                        By sending this form, you agree that RedMotion may process your details to respond to your inquiry. Read our{' '}
-                        <Link href="/privacy-policy" className="underline hover:text-neutral-700 transition-colors">
+                        By sending this form, you agree that RedMotion may
+                        process your details to respond to your inquiry. Read
+                        our{' '}
+                        <Link
+                            href="/privacy-policy"
+                            className="underline hover:text-neutral-700 transition-colors"
+                        >
                             Privacy Policy
-                        </Link>.
+                        </Link>
+                        .
                     </p>
                 </div>
             </form>

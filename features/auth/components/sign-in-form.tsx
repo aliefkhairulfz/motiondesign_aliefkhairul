@@ -44,7 +44,8 @@ export default function SignInForm() {
             if (signInError) {
                 setError(signInError.message || 'Failed to sign in. Check your credentials.');
             } else {
-                router.push('/');
+                router.push('/admin');
+                router.refresh();
             }
         } catch (e) {
             console.error(e);

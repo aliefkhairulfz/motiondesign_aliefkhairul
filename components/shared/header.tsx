@@ -54,13 +54,13 @@ export function Header() {
                 {/* Navigation (Desktop) */}
                 <nav className="hidden md:flex items-center gap-8">
                     <Link
-                        href="#"
+                        href="/portfolio"
                         className="text-sm font-medium text-neutral-400 hover:text-neutral-100 transition-colors"
                     >
                         Portfolio
                     </Link>
                     <Link
-                        href="#"
+                        href="/about"
                         className="text-sm font-medium text-neutral-400 hover:text-neutral-100 transition-colors"
                     >
                         About
@@ -86,7 +86,7 @@ export function Header() {
                                 href="#"
                                 className="px-4 py-2.5 text-sm text-neutral-300 hover:text-neutral-100 transition-colors mx-1 rounded-md"
                             >
-                                Blender Addon
+                                Creator Toolkits
                             </Link>
                             <Link
                                 href="#"
@@ -102,7 +102,9 @@ export function Header() {
                 <div className="flex items-center gap-4 z-50">
                     {/* CTA Button (Desktop) */}
                     <div className="hidden md:block">
-                        <Button className="p-5 font-bold">Get a Video</Button>
+                        <Button className="p-5 font-bold">
+                            Get your Video
+                        </Button>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -132,7 +134,7 @@ export function Header() {
                 {/* Navigation Links */}
                 <div className="flex flex-col gap-5 my-auto">
                     <Link
-                        href="#"
+                        href="/portfolio"
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="group flex items-baseline justify-between py-2.5 border-b border-neutral-900 hover:border-neutral-800 transition-colors"
                     >
@@ -142,7 +144,7 @@ export function Header() {
                     </Link>
 
                     <Link
-                        href="#"
+                        href="/about"
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="group flex items-baseline justify-between py-2.5 border-b border-neutral-900 hover:border-neutral-800 transition-colors"
                     >
@@ -209,7 +211,7 @@ export function Header() {
                         onClick={() => setIsMobileMenuOpen(false)}
                         className="w-full py-6 font-bold text-base bg-neutral-100 text-neutral-950 hover:bg-neutral-200 rounded-xl shadow-lg shadow-black/40 transition-transform active:scale-[0.98]"
                     >
-                        Get a Video
+                        Get your Video
                     </Button>
 
                     <div className="flex items-center justify-between text-xs text-neutral-500 pt-3 border-t border-neutral-900">

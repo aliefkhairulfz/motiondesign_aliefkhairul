@@ -157,7 +157,7 @@ const initialNodes: Node[] = [
         data: {
             num: '03',
             title: '3D Modeling',
-            desc: 'CAD & mesh topology',
+            desc: 'Polygon Modeling & mesh topology',
             img: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=400&auto=format&fit=crop&q=80'
         }
     },

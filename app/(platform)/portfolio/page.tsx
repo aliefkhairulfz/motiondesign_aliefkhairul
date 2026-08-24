@@ -1,5 +1,12 @@
-function PortfolioPage() {
-    return <div>this is portfolio page</div>;
-}
+import type { Metadata } from 'next';
+import PortfolioPageContent from '@/features/portfolio/pages/portfolio';
 
-export default PortfolioPage;
+export const metadata: Metadata = {
+    title: 'Portfolio & Selected Works | RedMotion',
+    description:
+        'Explore 3D commercial product animations, SaaS product films, and visual stories created by RedMotion for global brands.'
+};
+
+export default function PortfolioPage() {
+    return <PortfolioPageContent />;
+}
